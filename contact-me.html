@@ -41,11 +41,28 @@
 
           <div class="inner cover">
             <h1 class="cover-heading">You can ping me here: </h1>
-            <p class="p-mountains">Leave a message and I shall get back to you as soon as possible.</p>
+              <form action="mailto:pallavi05g@gmail.com">
+                <p class="p-mountains">Leave a message and I shall get back to you as soon as possible.</p>
+                <select class="btn btn-lg btn-default" name="Reason">
+                    <option class="btn btn-lg btn-default" value="reason1">Let's collaborate for a project!</option>
+                    <option class="btn btn-lg btn-default" value="reason2">Internship/Job related</option>
+                    <option class="btn btn-lg btn-default" value="reason3">Project portfolio related</option>
+                </select> 
+                <br><br>
+                <textarea style="color:black";
+                  name="body" 
+                  rows="10" 
+                  cols="80"></textarea>
+                <p>
+                <input class="btn btn-lg btn-default" type="submit" name="send" value="Send Your Message"/>
+                <input class="btn btn-lg btn-default" type="submit" name="cancel" value="Cancel - Never Mind"/>
+                </p>
+            </form>
+            <br><br>
               <!--LinkedIn, Quora, GitHub, Twitter presence, Wordpress/Blogspot blog; 
                     Set up a message system where the messages typed by the user is saved in my DB and I can ping them later/ just give contact details and leave it as is  ---- To decide on this one-->
             <p class="p-idol">
-              <a href="project-list.html" class="btn btn-lg btn-default">Learn more</a>
+              <a href="contact-me.html" class="btn btn-lg btn-default">Learn more</a>
             </p>
           </div>
 
