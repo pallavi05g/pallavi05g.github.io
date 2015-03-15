@@ -57,15 +57,15 @@
                     <option class="btn btn-lg btn-default" value="reason3">Project portfolio related</option>
                 </select> 
                 <br><br>
-                <textarea style="color:black";
+                <textarea style="color:black"; id="message"
                   name="body" 
                   rows="10" 
                   cols="80"></textarea>
                 <p>
-                <input class="btn btn-lg btn-default" type="submit" name="send" value="Send Your Message"/>
-                <input class="btn btn-lg btn-default" type="submit" name="cancel" value="Cancel - Never Mind"/>
+                    <input class="btn btn-lg btn-default" type="submit" name="send" value="Send Your Message"/>
                 </p>
             </form>
+            <p><input class="btn btn-lg btn-default" type="button" name="cancel" value="Cancel-Never Mind" onclick="javascript:clearText();"/></p>
             <br><br>
               <!--LinkedIn, Quora, GitHub, Twitter presence, Wordpress/Blogspot blog; 
                     Set up a message system where the messages typed by the user is saved in my DB and I can ping them later/ just give contact details and leave it as is  ---- To decide on this one-->
@@ -86,6 +86,11 @@
     <script src="../../dist/js/bootstrap.min.js"></script>
     <script src="../../assets/js/docs.min.js"></script>
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+      function clearText() {
+    document.getElementById("message").value = "";
+}
+    </script>
   </body>
 </html>
 
