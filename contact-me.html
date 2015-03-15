@@ -39,7 +39,7 @@
               </nav>
             </div>
           </div>
-
+          <br><br>
           <div class="inner cover">
             <h1 class="cover-heading" style="color:black">Ping me here!</h1>
               <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/pallavi05g"><i class="fa fa-twitter fa-2x"></i></a>
@@ -49,17 +49,18 @@
               <a class="btn btn-social-icon btn-instagram" href="https://instagram.com/pallavi05g/"><i class="fa fa-instagram fa-2x"></i></a>
               <br>
               <h1 class="cover-heading" style="color:black">OR</h1>
-              <form action="mailto:pallavi05g@gmail.com">
+              <form action="mailto:pallavi05g@gmail.com" id="messageForm">
                 <p class="p-mountains">Leave a message and I shall get back to you as soon as possible.</p>
-                <select class="btn btn-lg btn-default" name="Reason">
+                <select class="btn btn-lg btn-default" name="Reason" required="required">
+                    <option value="">Please select</option>
                     <option class="btn btn-lg btn-default" value="reason1">Let's collaborate for a project!</option>
                     <option class="btn btn-lg btn-default" value="reason2">Internship/Job related</option>
                     <option class="btn btn-lg btn-default" value="reason3">Project portfolio related</option>
                 </select> 
                 <br><br>
-                <textarea style="color:black"; id="message"
+                <textarea style="color:black"; id="message";
                   name="body" 
-                  rows="10" 
+                  rows="8" 
                   cols="80"></textarea>
                 <p>
                     <input class="btn btn-lg btn-default" type="submit" name="send" value="Send Your Message"/>
