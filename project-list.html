@@ -2,65 +2,252 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="dist/ico/favicon.png">
 
     <title>Pallavi Gupta's Project Portfolio</title>
 
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
 
+    <!-- Custom styles for this template -->
+    <link href="dist/css/main.css" rel="stylesheet">
     <link href="dist/css/portfolio-layout.css" rel="stylesheet">
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <link href="dist/css/animate-custom.css" rel="stylesheet">
+
+
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+      
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="dist/js/jquery.min.js"></script>
+	<script type="text/javascript" src="dist/js/modernizr.custom.js"></script>
   </head>
 
-  <body>
-    <div class="site-wrapper">
+  <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+  
+  
+  	<div id="navbar-main">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand hidden-xs hidden-sm" href="#home">
+        </div>
+        <div class="nav masthead-nav">
+            <h3 class="masthead-brand" align="left"><a href="index.html">Pallavi Gupta</a></h3>
+          <ul class="nav navbar-nav">
+			<li> <a href="#portfolio" class="smoothScroll"> Portfolio</a></li>
+            <li><a href="index.html" class="smoothScroll">Home</a></li>
+            <li class="active" class="smoothScroll"><a href="projects.html">Projects</a></li>
+            <li><a href="hobbies.html" class="smoothScroll">Hobbies</a></li>
+            <li><a href="contact-me.html" class="smoothScroll">Contact</a></li>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+		
+		<!-- ==== PORTFOLIO ==== -->
+		<div class="container" id="portfolio" name="portfolio">
+		<br>  
+            <h1 class="cover-heading">My Project Portfolio</h1> <!--Try class lead-->
+            <br><br>
+            <p class="p-mountains">I have worked on a few projects either as a part of coursework or out of my own interests <br><br>
+			<div class="container">
+			<div class="row">	
+			
+				<!-- PORTFOLIO IMAGE 1 -->
+				<div class="col-md-4 ">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="dist/images/portfolio/Auto_Answer_proj.jpg" alt="">
+							<figcaption>
+								<h5>AUTO ANSWER</h5>
+								<a data-toggle="modal" href="#auto-answer" class="btn btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+						      
+						  <div class="modal fade" id="auto-answer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">AUTO ANSWER</h4>
+						        </div>
+						        <div class="modal-body" style="color:black">
+						          <p><img class="img-responsive" src="dist/images/portfolio/Auto_Answer_proj.jpg" alt=""></p>
+						          <p><strong><em>When: </em></strong>Junior year, R V College of Engineering<br><strong><em>Where: </em></strong>R V College of Engineering<br><strong><em>Technologies used:</em></strong> Java, Android<br><strong><em>Project Motivation:</em></strong>The idea that inspired us to develop this app was simple - ‘Have you ever been worried about a friend or a family member when they don’t pick up your call?’. This Android mobile application enables users to send customized messages to groups of contacts incase the person misses answering his/her cellphone. There are high chances that users would like to send different text messages based on the person who calls them, where the user isn't able to reject the call with a text. By allowing the users to create custom groups and messages which can be preset and an intuitive user interface for custom message and group creation, this app managed to find a better use case than the traditional "reject call with a text" approach.</p>
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
+				
+				
+				<!-- PORTFOLIO IMAGE 2 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="dist/images/portfolio/Surface-Touch-proj.jpg" alt="">
+							<figcaption>
+								<h5>SURFACE TOUCH</h5>
+								<a data-toggle="modal" href="#surface-touch" class="btn btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+                
+						      
+						  <div class="modal fade" id="surface-touch" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">SURFACE TOUCH</h4>
+						        </div>
+						        <div class="modal-body" style="color:black">
+						          <p><img class="img-responsive" src="dist/images/portfolio/Surface-Touch-proj.jpg" alt=""></p>
+						          <p><em><strong>When: </strong></em>MIT Media Lab Design Innovation Workshop 2013<br><em><strong>Where: </strong></em> PES Institute of Technology, Bangalore <br>
+<em><strong>Mentored by: </strong></em>Daniel Leithinger and Anirudh Sharma, MIT Media Lab, Massachusetts<br><em><strong>Technologies used: </strong></em> Processing, Piezo-electric sensors<br><em><strong>Project Motivation:</strong></em><br>This tangible user interface prototype was developed over a period of 5 days in a team of 5 during the workshop. The first day of the workshop focused on identifying a problem. We walked to a near by place close to the workshop location to identify a problem that we could work upon. During this phase, meticulous notes were made for brainstorming at a later stage. The problem identification phase was followed by brainstorming and team formation phases. After the initial rounds of ideation, I met 4 team mates from backgrounds ranging from Design to Computer Science.<br>The second day of the workshop was about team collaboration, brainstorming, feasibility studies and pitching of the ideas. Other teams gave constructive feedback which were noted as a part of usability studies. This was followed by 2 days of intense rapid prototyping. We worked on a language called Processing and tinkered Arduino as well for the sake of the project. The final prototype made use of Piezo Electric sensors and worked like a charm. Right from the brainstorming to the conceptualisation phase and the final prototype creation phase, our mentors Daniel and Anirudh were a constant source of support. The workshop concluded with a project open house, where prototypes from all the tracks were showcased.<br>Amidst all the prototyping, we attended a series of talks by various folks from MIT Media Lab, where they discussed several aspects of design and programming. Amazing hosts, brilliant mentors, splendid talks, delicious food, inspiring TEDX talks, and new friends, added to the sheer marvel of the entire workshop, making it one of the most memorable experiences of my life. </p>
+						          <p><b><a href="http://youtu.be/-yjbRTVdmOQ">Visit Workshop link</a></b></p>
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
+                
+				<!-- PORTFOLIO IMAGE 3 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="dist/images/portfolio/Health_Care_Suite_proj.jpg.png" alt="">
+							<figcaption>
+								<h5>HEALTHCARE SUITE</h5>
+								<a data-toggle="modal" href="#health-care" class="btn btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+			</div><!-- /row -->
+						      
+						  <div class="modal fade" id="health-care" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">HEALTHCARE SUITE</h4>
+						        </div>
+						        <div class="modal-body" style="color:black">
+						          <p><img class="img-responsive" src="dist/images/portfolio/Health_Care_Suite_proj.jpg.png" alt=""></p>
+						          <p><strong><em>When: </em></strong>Sophomore and Junior years, R V College of Engineering<br<strong><em>Where: </em></strong>R V College of Engineering<br>
+<strong><em>Technologies used:</em></strong> Java, JDBC, Oracle NetBeans IDE, MySQL<br><strong><em>Project Motivation:</em></strong>
+This project was conceptualised and originally developed as a part of Oracle ThinkQuest International Application Development Contest 2012 along with 3 other team mates. In the next iteration of the same, the project was enhanced with additional features. The idea behind this project was to tackle the paucity of healthcare services in rural India. This health care suite when installed at various kiosks in primary schools with access to computers would serve as tools for the people in that area to access healthcare information with ease.<br><strong><em>Key Features:</strong></em><br>
+<ul>
+	<li> Unique Symptom Checker and Ailment predictor</li> 
+	<li> Home Remedy portal</li>
+    <li> Vaccine logger</li>
+	<li> Patient logger</li>
+	<li> Nearest Doctor locator</li>
+	<li> Portal for Women's Health</li>
+	<li> First Aid Information portal</li>
+	<li> Nutritional monitoring tracked using BMI, calorie count and ideal weight calculators</li></ul></p>
+						          <p><b><a href="https://vimeo.com/40801260">Visit Project Proposal Link</a></b></p>
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
 
-      <div class="site-wrapper-inner">
+				<!-- PORTFOLIO IMAGE 4 -->
+			<div class="row">	
+				<div class="col-md-4 ">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="dist/images/portfolio/SEC_2012_Asha_proj.jpg" alt="">
+							<figcaption>
+								<h5>ASHA</h5>
+								<a data-toggle="modal" href="#asha" class="btn btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+                
+						      
+						  <div class="modal fade" id="asha" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">ASHA</h4>
+						        </div>
+						        <div class="modal-body" style="color:black">
+						          <p><img class="img-responsive" src="dist/images/portfolio/SEC_2012_Asha_proj.jpg" alt=""></p>
+						          <p><strong><em>When: </em></strong>Sophomore year, R V College of Engineering<br><strong><em>Where: </em></strong> Sustainable Energy Challenge 2012(SEC 2012) organised by SELCO at Indian Institute of Management Bangalore (IIM-B)<br><strong><em>Project Motivation:</em></strong>Asha - Sapno Ki Jholi was born when we started discussing about the energy crisis in the city and how we could make a difference. In Hindi, "Asha" means hope and "Sapno Ki Jholi" means a cradle of dreams. This project was an effort in the direction of raising awareness about waste management. After weeks of brainstorming and ideation, we proposed a solution which was presented at Indian Institute of Management, Bangalore (IIM-B) at the Sustainable Energy Challenge by SELCO India. The notion behind Asha was to promote civic sense and environmental responsibility and foster innovative ways to inculcate the awareness about waste segregation and management solutions.<br><strong><em>Our Proposal:</em></strong>The solution that we developed comprised of the various components which would together result in an effective cost effective solution. It consisted of a user friendly application in the form of a game which would teach children about the various aspects of waste management; a fact randomiser which would deal with concepts related to civic sense, waste disposal, segregation; picture filled presentations which would cover harmful effects of dumping and inefficient waste disposal; a newsletter that would demonstrate segregation success stories, community involvement and benefits and 3R bins. The whole solution was designed keeping in mind the rural India as the target audience.
+</p>
+						          <p><b><a href="https://www.youtube.com/watch?v=LwIsxKBTcVo&amp;feature=youtu.be">Visit Our proposal link</a></b></p>
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
+				
+				<!-- PORTFOLIO IMAGE 5 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="dist/images/portfolio/Auto_Answer_proj.jpg" alt="">
+							<figcaption>
+								<h5>AUTO ANSWER</h5>
+								<a data-toggle="modal" href="#auto-answer" class="btn btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+				
+				<!-- PORTFOLIO IMAGE 6 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="dist/images/portfolio/Auto_Answer_proj.jpg" alt="">
+							<figcaption>
+								<h5>AUTO ANSWER</h5>
+								<a data-toggle="modal" href="#auto-answer" class="btn btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+			</div><!-- /row -->
+			<br>
+			<br>
+		</div><!-- /row -->
+	</div><!-- /container -->
 
-        <div class="cover-container">
 
-          <div class="masthead clearfix">
-            <div class="inner">
-             <h3 class="masthead-brand"><a href="index.html">Pallavi Gupta</a></h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li><a href="index.html">Home</a></li>
-                  <li class="active"><a href="projects.html">Projects</a></li>
-                  <li><a href="hobbies.html">Hobbies</a></li>
-                  <li><a href="contact-me.html">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-
-          <div class="inner cover">
-            <h1 class="cover-heading">My Project Portfolio</h1>
-            
-              <!--Show the entire project work, link to github and everything relevant. Work on content for the projects.-->
-            <p class="p-idol">
-            </p>
-          </div>
-
-          <div class="mastfoot">
+         <div class="mastfoot">
             <div class="credits">
-              <p>Designed and developed by Pallavi Gupta</p>
+              <p align="center">Designed and developed by Pallavi Gupta</p>
             </div>
           </div>
             
         </div>
 
-      </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+		
 
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/docs.min.js"></script>
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+	<script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="dist/js/retina.js"></script>
+	<script type="text/javascript" src="dist/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="dist/js/smoothscroll.js"></script>
+	<script type="text/javascript" src="dist/js/jquery-func.js"></script>
   </body>
 </html>
-
