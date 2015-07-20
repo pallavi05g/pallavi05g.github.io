@@ -152,7 +152,7 @@ body {
 
 /* Padding for spacing */
 .inner {
-  padding: 20px;
+  padding: 0px;
   font-family: "elliotsixregular";
 }
 
@@ -161,8 +161,8 @@ body {
  * Header
  */
 .masthead-brand {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   font-family: 'elliotsixregular', Arial, sans-serif;
 }
 
