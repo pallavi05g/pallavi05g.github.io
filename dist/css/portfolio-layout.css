@@ -97,6 +97,8 @@ body {
     font-family: 'mountains_of_christmasregular';
     font-style: normal;
     margin-bottom: 20px;
+    margin: auto;
+    width: 60%;
     color: black;
     font-size: 20px;
     font-weight: 300;
