@@ -1,85 +1,823 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
 
     <title>Pallavi Gupta</title>
 
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="dist/css/portfolio-layout.css" rel="stylesheet">
-    <link href="dist/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 
-    <link href="dist/css/portfolio-layout.css" rel="stylesheet" type="text/css" charset="utf-8" />
-    <!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script>-->
-      
-  </head>
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
 
-  <body id="page-top"> <!--#386070 -->
-      <nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top">
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
-            <div class="site-wrapper">
-                <div class="site-wrapper-inner">
-                    <div class="cover-container">
-                        <div class="masthead clearfix">
-                            <div class="inner">
-                                <h3 class="masthead-brand"><a href="index.html">Pallavi Gupta</a></h3>
-                                <nav>
-                                    <ul class="nav masthead-nav">
-                                        <li class="active"><a href="index.html">Home</a></li>
-                                        <li><a href="projects.html">Projects</a></li>
-                                        <li><a href="hobbies-elaborated.html">Hobbies</a></li> <!--Changing link-->
-                                        <li><a href="contact-me.html">Contact</a></li>
-                                    </ul>
-                                </nav>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Pallavi Gupta</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About Me</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#hobbies">Hobbies</a>
+                    </li>
+                    <li>                       
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>Namaste!</h1>
+                <hr>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                <p class="text-faded">My name is Pallavi Gupta. I'm a developer. I love the concept of design and user experience. When I am not coding, you can find me sketching or doing some calligraphic work. </p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Tell me more!</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Who Am I?</h2>
+                    <hr class="light">
+                    <p class="text-faded">Software Engineer by day. Artist by night. Working for a Voice Recognition product at Samsung Research. Calligrapher. Debator. Editor. Apple fan. I break stereotypes. A feminist advocating women to take up careers in STEM fields. Harry Potter fan. I read fiction and non-fiction. Roger Federer is God. I explore places in a non-touristy way. Oh, I like Psychology and Philosophy.</p>
+                    <a href="http://thoughts-so-random.blogspot.com" target="_blank" class="btn btn-default btn-xl">Show Blog</a> <!---To check-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Hobbies</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box"> <!-- Here add a link to conferences I've been a part of-->
+                        <img src="img/code.png" class="fa fa-4x wow bounceIn text-primary img-responsive" alt="" data-wow-delay=".1s">
+                        <h3>Coding</h3>
+                        <p class="text-muted">Technology lover. Hackathons. Prototyping. Software Engineer. Computer Science</p><br>
+                    <a class=" button btn btn-default btn-xl" href="/conferences.html">Conferences</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/paint-brush.png" class="fa fa-4x wow bounceIn text-primary" alt="" data-wow-delay=".1s">
+                        <h3>Art and Design</h3>
+                        <p class="text-muted">Pencil. Color. <br>Oil. Pastel.<br> Charcoal. GIMP.</p><br>
+                        <a class=" button btn btn-default btn-xl" href="/artwork.html">Artwork</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/calligraphy.png" class="fa fa-4x wow bounceIn text-primary" alt="" data-wow-delay=".1s">
+                        <h3>Calligraphy</h3>
+                        <p class="text-muted">Calligrapher. Since age 8<br>Writing. Editorial Boards.<br> Haiku. Poetry</p><br>
+                        <a class=" button btn btn-default btn-xl" href="/calligraphy.html">Calligraphy</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/microphone.png" class="fa fa-4x wow bounceIn text-primary" alt="" data-wow-delay=".1s">
+                        <h3>Debating</h3>
+                        <p class="text-muted">Asian Style Parliamentary Debates. Adjudicator. Elocution. Narrator. Invited Speaker</p><br>
+                        <a class=" button btn btn-default btn-xl" href="/debates.html">Debating</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal0" class="portfolio-box" data-toggle="modal">
+                        <img src="img/portfolio/SimpliCity.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Prototyping
+                                </div>
+                                <div class="project-name">
+                                    Simpl-i-City
+                                </div>
                             </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal1" class="portfolio-box" data-toggle="modal">
+                        <img src="img/portfolio/PowerOptimization-tile.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Industry capstone
+                                </div>
+                                <div class="project-name">
+                                    Power Optimization for phones and tablets
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal2" class="portfolio-box" data-toggle="modal">
+                        <img src="img/portfolio/Asha-tile.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Conceptualization
+                                </div>
+                                <div class="project-name">
+                                    ASHA: Sapnon Ki Jholi
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal3" class="portfolio-box" data-toggle="modal">
+                        <img src="img/portfolio/SurfaceTouch-tile.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Prototyping
+                                </div>
+                                <div class="project-name">
+                                    Surface Touch
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal4" class="portfolio-box" data-toggle="modal">
+                        <img src="img/portfolio/ChallengeMe-tile.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Hackathon
+                                </div>
+                                <div class="project-name">
+                                    Challenge Me
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal5" class="portfolio-box" data-toggle="modal">
+                        <img src="img/portfolio/HealthCareSuite-tile.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Application Development
+                                </div>
+                                <div class="project-name">
+                                    Health Care Suite
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal6" class="portfolio-box" data-toggle="modal">
+                        <img src="img/portfolio/BloodSearch-tile.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Prototyping
+                                </div>
+                                <div class="project-name">
+                                     Blood Search 
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal7" class="portfolio-box" data-toggle="modal">
+                        <img src="img/portfolio/DriveSmart-tile.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Prototyping
+                                </div>
+                                <div class="project-name">
+                                    Drive Smart
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal8" class="portfolio-box" data-toggle="modal">
+                        <img src="img/portfolio/Gesture-Recognition.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Prototyping
+                                </div>
+                                <div class="project-name">
+                                    Gesture Recognition
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal9" class="portfolio-box" data-toggle="modal">
+                        <img src="img/portfolio/AutoAnswer-tile.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Application Development
+                                </div>
+                                <div class="project-name">
+                                    Auto Answer
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-8 col-sm-1">
+                    <a href="#portfolioModal10" class="portfolio-box" data-toggle="modal">
+                        <img src="img/portfolio/SVoice.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Product Development
+                                </div>
+                                <div class="project-name">
+                                    S Voice
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--Project 0-->        
+    <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Simpl-i-City</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/SimpliCity.jpg" class="img-responsive img-centered" alt="">
+                            <div class=project-titles>About</div>
+                            <p class=project-details>I have seen a lot of friends move into this city either for education or employment. Having stayed in the same city till date, it intrigues me what it means to stay in a different city. All the people that I have come across have a set of common questions that they seek answers to, from a native person.</p>    
+                            <div class=project-titles>Proposal</div>
+                            <p class=project-details>Simpl-i-City is a one-stop solution for any newbie in a city (food, local lingo, places to see, clubs, stay etc). This prototype aims to eliminate the hurdles faced with respect to local food, language, places to explore, clubs, places to stay. This prototype was developed as a part of the Human Computer Interaction MOOC by Scott Klemmer.</p>                        
+                            <div class=project-titles>
+                            <div>When</div>
+                            <p class=project-details>Late 2014</p>
+                            <div class=project-titles>Where</div>
+                            <p class=project-details>ImpressIT 2012 Proof-of-Concept IT Solution Contest | SAP Labs, India | Government of Karnataka | Bangalore IT.biz 2012 </p>
+                            <div class=project-titles>Position</div>
+                            <p class=project-details>2nd place (Within Department of Computer Science)</p>
+                            <div class=project-titles>Role</div>
+                            <p class=project-details>Conceptualization | Prototyping</p>
+                            <div class=project-titles>Tags</div>
+                            <p class=project-details>Human Computer Interaction | MOOCs</p>
+                            <div class=project-titles>Link</div>
+                            <p class=project-details><a href="http://pallavi05g.github.io/Simpl-i-City/" target="_blank">Project Website</a> | <a href="http://pallavi05g.github.io/Simpl-i-City/" target="_blank">Project Website</a></p>
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
             </div>
-          </div>
-        </nav>
-        <br><br><br><br><br><br><br>
-          <div class="inner cover">
-            <h1 class="cover-heading">Pallavi Gupta</h1> <!--Try class lead-->
-            <br>
-            <!--<p id="logo"><img src="dist/images/my-site-icon-backdrop-small.png" alt="Pallavi Gupta logo" /></p>-->
-            <p class="p-mountains-small-text">Namaste! <br>My name is Pallavi Gupta. I'm a developer. <br>I love the concept of design and user experience. <br>When I am not coding, you can find me sketching or doing some calligraphic work. <br>
-                <!--Here, you can take a quick look at <a title="My LinkedIn Profile" href="http://in.linkedin.com/pub/pallavi-gupta/35/631/14a/">My LinkedIn profile</a>-->
-              <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/pallavi05g" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-              <a class="btn btn-social-icon btn-linkedin" href="http://in.linkedin.com/in/pallavi05g/en" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
-              <a class="btn btn-social-icon btn-instagram" href="https://instagram.com/pallavi05g/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></p>
-            <p class="p-mountains">
-              <a href="projects.html" class="btn btn-lg btn-default">See my portfolio!</a>
-            </p>
-          </div>
+        </div>
+    </div>
+    <!--Project 1-->    
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Power Optimization for phones and tablets</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/PowerOptimization.png" class="img-responsive img-centered" alt="">
+                            <div class=project-titles>About</div>
+                            <p class="project-details">Analytical tool and Linux kernel module to under and optimize power consumed by various components in mobile devices</p>
+                            <div class=project-titles>Project description</div>
+                            <p class=project-details>This project involved in-depth research about power consumption in an application processor and identification of loopholes in mobile application development. As a part of this project, I developed a Linux kernel debug module for power optimization in Linux kernel version 3.4. Additionally, I developed a C# data visualization tool to understand the behavior of various internal parameters such as C-States, P-States, Interrupts and Operating Frequencies for mobile devices. By the end of the project, we were able to optimize power usage by 40% in one of the use cases, based on the graphs generated by this visual tool.</p>
+                            <div class=project-titles>
+                            <div>When</div>
+                            <p class=project-details>Senior year | R V College of Engineering | Jan - April 2014</p>
+                            <div class=project-titles>Where</div>
+                            <p class=project-details>Samsung Research Institute Bangalore</p>
+                            <div class=project-titles>Role</div>
+                            <p class=project-details>Developer (Intern)</p>
+                            <div class=project-titles>Tags</div>
+                            <p class=project-details>C# | Linux Kernel internals</p>
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Project 2-->    
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>ASHA: Sapnon Ki Jholi</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/Asha-proj.jpeg" class="img-responsive img-centered" alt="">
+                            <div class=project-titles>About</div>
+                            <p class=project-details>Asha - Sapno Ki Jholi was born when we started discussing about the energy crisis in the city and how we could make a difference. In Hindi, "Asha" means hope and "Sapno Ki Jholi" means a cradle of dreams. This project was an effort in the direction of raising awareness about waste management. The notion behind Asha was to promote civic sense and environmental responsibility and foster innovative ways to inculcate the awareness about waste segregation and management solutions.</p>
+                            <div class=project-titles>Our Proposal</div>
+                            <p class=project-details>The solution that we developed comprised of the various components which would together result in a cost effective solution. It consisted of a user friendly application in the form of a game which would teach children about the various aspects of waste management; a fact randomiser which would deal with concepts related to civic sense, waste disposal, segregation; picture filled presentations which would cover harmful effects of dumping and inefficient waste disposal; a newsletter that would demonstrate segregation success stories, community involvement and benefits and 3R (Reduce, Reuse, Recycle) bins. The whole solution was designed keeping in mind rural India as the target audience.
+</p>                        
+                            <div class=project-titles>
+                            <div>When</div>
+                            <p class=project-details>Sophomore year | R V College of Engineering | 2012</p>
+                            <div class=project-titles>Where</div>
+                            <p class=project-details>Sustainable Energy Challenge 2012(SEC 2012) organised by SELCO at Indian Institute of Management Bangalore(IIM-B)</p>
+                            <div class=project-titles>Position</div>
+                            <p class=project-details>Finalist</p>
+                            <div class=project-titles>Role</div>
+                            <p class=project-details>Conceptualization | Sketching | Brainstorming | Presentation</p>
+                            <div class=project-titles>Link</div>
+                            <p class=project-details><a href="https://www.youtube.com/watch?v=LwIsxKBTcVo&amp;feature=youtu.be" target="_blank">Project Video</a></p>
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Project 3-->    
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Surface Touch</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/SurfaceTouch.jpg" class="img-responsive img-centered" alt="">
+                            <div class=project-titles>About</div>
+                            <p class=project-details>This tangible user interface prototype was developed over a period of 5 days in a team of 5 during the MIT Media Lab Design Innovation workshop. On the first day, we focused on identifying a problem by touring in the city. We took down notes and later brainstormed the pros and cons of each of our ideas. It was really interesting to evaluate an idea holistically and find like-minded inidividuals as team members. I met 4 others from Design and Computer Science backgrounds.<br>On the second day, we brainstormed and conducted feasibility studies and pitched our ideas to the entire cohort. The feedback given by other teams during the usability studies was invaluable. The following two days, we were involved in intense rapid prototyping. The final prototype was written in Processing and used Piezo Electric sensors. Working under Media Lab researchers, Daniel and Anirudh was incredible. The workshop concluded with a project open house and a series of talks by various folks from MIT Media Lab including Ramesh Raskar, where they discussed several aspects of design and programming. Amazing hosts, brilliant mentors, splendid talks, delicious food, inspiring TEDX talks, and new friends, added to the sheer marvel of the entire workshop, making it one of the most memorable experiences of my life.</p>    
+                            <div class=project-titles>
+                            <div>When</div>
+                            <p class=project-details>Junior year | R V College of Engineering | 2012</p>
+                            <div class=project-titles>Where</div>
+                            <p class=project-details>MIT Media Lab Design Innovation Workshop 2013 | PES Institute of Technology, Bangalore</p>
+                            <div class=project-titles>Role</div>
+                            <p class=project-details>Conceptualization | Sketching | Brainstorming | Presentation</p>
+                            <div class=project-titles>Tags</div>
+                            <p class=project-details>Processing | Piezo-electric sensors</p>
+                            <div class=project-titles>Link</div>
+                            <p class=project-details><a href="http://youtu.be/-yjbRTVdmOQ" target="_blank">Visit Workshop link</a></p>
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Challenge Me</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/ChallengeMe.jpg" class="img-responsive img-centered" alt="">
+                            <div class=project-titles>About</div>
+                            <p class=project-details>Productivity + Fun = Awesomeness! A unique concept of defining fun with a productivity app. Humans are fickle minded creatures. They are lazy and don’t bother about anything till something is innovative. We all like to restrict our mobile usage. We try hard to not use Facebook for prolonged hours. We don’t want to become Candy Crush addicts. Yet, we can’t stay away from it all. We all love challenges. Why not, add these elements to productivity apps? An element of fun? Challenge? Scores?</p>
+                            <div class=project-titles>Our Proposal</div>
+                            <p class=project-details>Challenge your friends for our unique app challenges on your mobile device. Here are some of the key features of this game: </p>                        
+                            <ul class=project-details> 
+                                <li>See who has a better sense of self control</li>
+                                <li>Fun way to stay away from your phone</li>
+                                <li>Set time durations and if you still manage to stay away from your phone, you win points</li>
+                                <li>Exchange point with trophies</li>
+                                <li>Share the scores with your friends and see who wins </li>
+                                <li>Get notified if your friends use their phone despite the challenge</li>
+                            </ul>
+                            <div class=project-titles>
+                            <div>When</div>
+                            <p class=project-details>March 6th, 2015 – March 8th, 2015</p>
+                            <div class=project-titles>Where</div>
+                            <p class=project-details>International Women’s Day Hackathon 2015 | HackerEarth</p>
+                            <div class=project-titles>Position</div>
+                            <p class=project-details>Top 36th team in the world (Among 10000 women developers ~ Top 1%)</p>
+                            <div class=project-titles>Tags</div>
+                            <p class=project-details>Gamification | Productivity</p>
+                            <div class=project-titles>Role</div>
+                            <p class=project-details>Conceptualization | Sketching | Brainstorming | Developer</p>
+                            <div class=project-titles>Link</div>
+                            <p class=project-details>TO DO</p>
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Health Care Suite</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/HealthCareSuite.jpg" class="img-responsive img-centered" alt="">      
+                            <div class=project-titles>About</div>
+                            <p class=project-details>This was one of my first hobby projects which I submitted to a contest after pitching about it to a couple of friends from undergrad. The idea behind this project was to tackle the paucity of healthcare services in rural India. This health care suite when installed at various kiosks in primary schools with access to computers would serve as a tool for the local folk to access healthcare information with ease.</p>    
+                            <div class=project-titles>Our Proposal</div>
+                            <p class=project-details>After days of brainstorming, we designed and developed a healthcare solution suite which comprised of a unique Symptom Checker, Home Remedy Assistant, array of health calculators, Women's Health Awareness Education Portal, Nearest Doctor Search, Children’s Vaccine Alert system. During the course of this project, we interacted with doctors and patients to understand the existing problem in rural healthcare. Our idea was simple: To ensure access to healthcare solutions for rural Indians, in the absence of medical practitioners. 
+</p>                        
+                            <div class=project-titles>
+                            <div>When</div>
+                            <p class=project-details>Sophomore year | R V College of Engineering | 2012</p>
+                            <div class=project-titles>Where</div>
+                            <p class=project-details>Oracle ThinkQuest International Application Development Contest 2012</p>
+                            <div class=project-titles>Position</div>
+                            <p class=project-details>Top 10%</p>
+                            <div class=project-titles>Role</div>
+                            <p class=project-details>Conceptualization | Sketching | Brainstorming | Development</p>
+                            <div class=project-titles>Tags</div>
+                            <p class=project-details>Java | JDBC | Oracle NetBeans IDE | MySQL</p>
+                            <div class=project-titles>Link</div>
+                            <p class=project-details><a href="https://vimeo.com/40801260" target="_blank">Video</a> | <a href="www.oracle.com/us/corporate/press/1721500" target="_blank">Media</a> | <a href="http://www.oracle.com/us/dm/158517-amer11050018c0-oem-1914475.html" target="_blank">Results</a></p>
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Blood Search</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/BloodSearch/BloodSearch.jpg" class="img-responsive img-centered" alt="">
+                            <div class=project-titles>About</div>
+                            <p class=project-details>We envisioned a platform to connect blood donors and recipients. Though the current system of blood banks exists, we wanted to enhance the experience as the whole process of blood donation isn’t organized well and is cumbersome.</p>    
+                            <div class=project-titles>Our Proposal</div>
+                            <p class=project-details>Our system envisages an application, which allows users to sign up, locate, search, learn and share. A user, on registration, creates a profile, which notes the blood type, location and other personal details. The user can then search our database for the number of blood units requested along with the blood type. Our solution searches this query against our user database and suggests nearby people who are willing to donate. The donors are notified in case of a request, which they can accept, using a simple interface. In cases where no nearby donors are present, our application notifies the nearest blood bank. The uniqueness in our application lies in the fact that we create a unified platform for both individual users and blood banks.</p>                        
+                            <div class=project-titles>
+                            <div>When</div>
+                            <p class=project-details>Junior Year | R V College of Engineering | March 2013</p>
+                            <div class=project-titles>Where</div>
+                            <p class=project-details>Girls in Technology Program Challenge | International Women’s Day Celebration | CISCO Systems India</p>
+                            <div class=project-titles>Position</div>
+                            <p class=project-details>Finalist</p>
+                            <div class=project-titles>Role</div>
+                            <p class=project-details>Conceptualization | Brainstorming | Development</p>
+                            <div class=project-titles>Tags</div>
+                            <p class=project-details>Social and Healhcare Solutions using Mobile</p>
+                            <div class=project-titles>Link</div>
+                            <p class=project-details><a href="" target="_blank">TO DO</a></p>
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Drive Smart</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/DriveSmart.jpg" class="img-responsive img-centered" alt="">       
+                            <div class=project-titles>About</div>
+                            <p class=project-details>Traffic has always been an issue in Bangalore and it is tiresome to commute in the city. We wanted to leverage technology to change this. </p>    
+                            <div class=project-titles>Our Proposal</div>
+                            <p class=project-details>We proposed a solution to get rid of the traffic nightmare in the city with an efficient traffic management system. Our proposal revolved around live traffic updates based on location and intensity of the jam. It covered aspects such as road diversions, roadblocks due to festivities and celebrations. The solution was targeted at users who wanted to avoid possible areas of congestion. It was designed to be a crowdsourcing kind of a system where we visualized a user based input system integrated with social media integration and GPS systems, thus enabling a real-time live traffic feed. This solution could equip emergency services like fire brigades and ambulances to navigate better within the city.</p>                        
+                            <div class=project-titles>
+                            <div>When</div>
+                            <p class=project-details>Sophomore Year | R V College of Engineering | March 2013</p>
+                            <div class=project-titles>Where</div>
+                            <p class=project-details>ImpressIT 2012 Proof-of-Concept IT Solution Contest | SAP Labs, India | Government of Karnataka | Bangalore IT.biz 2012 </p>
+                            <div class=project-titles>Position</div>
+                            <p class=project-details>Finalist (Top 32 out of 120 teams)</p>
+                            <div class=project-titles>Role</div>
+                            <p class=project-details>Conceptualization | Brainstorming | Prototype</p>
+                            <div class=project-titles>Tags</div>
+                            <p class=project-details>Social Solutions using Mobile</p>
+                            <div class=project-titles>Link</div>
+                            <p class=project-details><a href="" target="_blank">TO DO</a></p>
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Gesture Recognition</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/Gesture-Recognition.jpg" class="img-responsive img-centered" alt="">
+                            <div class=project-titles>About</div>
+                            <p class=project-details>The way we interact with a system is changing. We wanted to use gestures to interact with a laptop and perform functions.</p>    
+                            <div class=project-titles>Our Proposal</div>
+                            <p class=project-details>We parallelized and developed a system to enhance efficiency and speed of gesture recognition. The system was able to identify pre-defined hand gestures using the native camera interface of a webcam present in a laptop</p>                        
+                            <div class=project-titles>
+                            <div>When</div>
+                            <p class=project-details>Senior Year | R V College of Engineering | 2014</p>
+                            <div class=project-titles>Where</div>
+                            <p class=project-details>ImpressIT 2012 Proof-of-Concept IT Solution Contest | SAP Labs, India | Government of Karnataka | Bangalore IT.biz 2012 </p>
+                            <div class=project-titles>Position</div>
+                            <p class=project-details>2nd place (Within Department of Computer Science)</p>
+                            <div class=project-titles>Role</div>
+                            <p class=project-details>Development</p>
+                            <div class=project-titles>Tags</div>
+                            <p class=project-details>Interfaces</p>
+                            <div class=project-titles>Link</div>
+                            <p class=project-details><a href="" target="_blank">TO DO</a></p>
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Auto Answer</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/AutoAnswer.jpg" class="img-responsive img-centered" alt="">
+                            
+                            <div class=project-titles>About</div>
+                            <p class=project-details>The idea that inspired us to develop this app was simple - ‘Have you ever been worried about a friend or a family member when they don’t pick up your call?’</p>    
+                            <div class=project-titles>Our Proposal</div>
+                            <p class=project-details>This Android mobile application enables users to send customized messages to groups of contacts incase the person misses answering his/her cellphone. There are high chances that users would like to send different text messages based on the person who calls them, where the user isn't able to reject the call with a text. By allowing the users to create custom groups and messages which can be preset and an intuitive user interface for custom message and group creation, this app managed to find a better use case than the traditional "reject call with a text" approach.</p>
+                            <div class=project-titles>
+                            <div>When</div>
+                            <p class=project-details>Junior Year | R V College of Engineering | 2014</p>
+                            <div class=project-titles>Where</div>
+                            <p class=project-details>ImpressIT 2012 Proof-of-Concept IT Solution Contest | SAP Labs, India | Government of Karnataka | Bangalore IT.biz 2012 </p>
+                            <div class=project-titles>Position</div>
+                            <p class=project-details>2nd place (Within Department of Computer Science)</p>
+                            <div class=project-titles>Role</div>
+                            <p class=project-details>Conceptualization| Development | Presentation</p>
+                            <div class=project-titles>Tags</div>
+                            <p class=project-details>Application Development</p>
+                            <div class=project-titles>Link</div>
+                            <p class=project-details><a href="" target="_blank">TO DO</a></p>
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>S Voice</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/SVoice.jpg" class="img-responsive img-centered" alt="">
+                            
+                            <div class=project-titles>About</div>
+                            <p class=project-details>S Voice is Samsung's Voice Assistant which interacts with a user intelligently.</p>    
+                            <div class=project-titles>Project Information</div>
+                            <p class=project-details>A Voice Recognition System which intelligently responds to users' queries. I work on a Natural Language Processing module which deals with different types of queries.</p>
+                            <div class=project-titles>
+                            <div>Details</div>
+                            <p class=project-details>Samsung R &amp D | June 2014 - Present </p>
+                            <div class=project-titles>Role</div>
+                            <p class=project-details>Software Engineer</p>
+                            <div class=project-titles>Tags</div>
+                            <p class=project-details>Product Development</p>
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>What more details?</h2>
+                <a href="https://drive.google.com/file/d/0BzQjAXvx2fLTQ1lNaDl1ZTl1Rjg/view?usp=sharing" target="_blank" class="btn btn-default btn-xl wow tada">Curriculum Vitae</a>
+            </div>
+        </div>
+    </aside>
 
-      <!-- Static bottom navbar 
+    <section id="contact">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-4 text-center">
+                    <h2 class="section-heading">Let's Talk!</h2>
+                    <hr class="primary">
+                    <p>Drop in an email and I will get back to you as soon as possible! You can also find me here in case I don't respond to your emails.</p>
+                </div>
+                <div class="col-lg-1 col-lg-offset-4 text-center">
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/pallavi05g" target="_blank"><i class="fa fa-twitter fa-3x wow bounceIn" data-wow-delay=".1s"></i></a>
+                </div>
+                <div class="col-lg-1 text-center">
+                    <a class="btn btn-social-icon btn-linkedin" href="http://in.linkedin.com/in/pallavi05g/en" target="_blank"><i class="fa fa-linkedin fa-3x wow bounceIn" data-wow-delay=".1s"></i></a>
+                    <!--<p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>-->
+                </div>
+                <div class="col-lg-1 text-center">
+                    <a class="btn btn-social-icon btn-instagram" href="https://instagram.com/pallavi05g/" target="_blank"><i class="fa fa-instagram fa-3x wow bounceIn" data-wow-delay=".1s"></i></a>
+                </div>
+                <div class="col-lg-1 text-center">
+                    <a class="btn" href="mailto:pallavi05g@gmail.com"><i class="fa fa-envelope fa-3x wow bounceIn" data-wow-delay=".1s"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+    <div class="navbar navbar-inverse">
           <div class="container">
             <div class="credits">
               <a class="navbar-brand" href="#">&copy; 2015 Pallavi Gupta</a>
             </div>
-          </div> -->
-      
-    <footer>
-      <div class="mastfoot">
-                <div class="credits">
-                   <!-- <p>Designed and developed by Pallavi Gupta</p> -->
-                    <a class="navbar-brand" href="#">&copy; 2015 Pallavi Gupta</a>
-
-                </div>
-            </div>
+          </div>
+    </div>
     </footer>
 
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/docs.min.js"></script>
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
 </html>
-
