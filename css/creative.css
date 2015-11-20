@@ -558,6 +558,13 @@ body {
     background-repeat:no-repeat;
 }
 
+.resume-section{
+    background-image:url(/img/portfolio/resume-background.jpg); 
+    font: 'Helvetica Neue';
+    font-style: normal;
+    color: white;
+    background-repeat:no-repeat;
+}
 .calligraphy{
     background-image:url(/img/portfolio/calligraphy.jpg); 
 }
