@@ -541,3 +541,31 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
 }
+
+.hobby-layout{
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover; 
+    background-position: center center;   
+    -o-background-size: cover;
+}
+
+.hobbies-section{
+    background-image:url(/img/portfolio/hobbies-background.jpg); 
+    background-repeat:no-repeat;
+}
+
+.calligraphy{
+    background-image:url(/img/portfolio/calligraphy.jpg); 
+}
+
+.debates{
+    background-image:url(/img/portfolio/debates.jpg); 
+}
+
+.conferences{
+    background-image:url(/img/portfolio/tech-chronicles.jpg); 
+}
