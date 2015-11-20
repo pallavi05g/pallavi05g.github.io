@@ -89,12 +89,12 @@ aside {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
-    color: #f05f40;
+    color: #337ab7;<!--#f05f40;-Orange -->
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #eb3812;
+    color: #3000b0; <!--#eb3812;//Dark Orange-->
 }
 
 .navbar-default .nav > li>a,
@@ -274,7 +274,7 @@ header .header-content .header-content-inner p {
     text-align: center;
     color: #fff;
     opacity: 0;
-    background: rgba(240,95,64,.9);
+    background: rgba(51,122,183,.9);<!--rgba(240,95,64,.9);-->
     -webkit-transition: all .25s;
     -moz-transition: all .25s;
     transition: all .25s;
