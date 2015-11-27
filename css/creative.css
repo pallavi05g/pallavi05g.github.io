@@ -51,6 +51,10 @@ p {
     line-height: 1.5;
 }
 
+.section-font{
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
 .bg-primary {
     background-color: #337ab7;<!--#f05f40;-Orange -->
 }
