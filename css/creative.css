@@ -219,6 +219,7 @@ header {
 
 .otherpages {
     position: relative;
+    height:300px;
     min-height: auto;
     text-align: center;
     color: #fff;
