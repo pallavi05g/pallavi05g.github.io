@@ -683,3 +683,7 @@ body {
 .mysection {
     background-image: url(/img/background-3.jpg);
 }
+
+.proj-container{
+    width:auto;
+}
