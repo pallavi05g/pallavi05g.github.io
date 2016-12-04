@@ -219,12 +219,16 @@ header {
 
 .otherpages {
     position: relative;
+    height: 50px;
     text-align: center;
-    min-height: auto;
     color: #fff;
     background-color: #76a6c4;
-    background-image: url(/img/otherpages-header.png);
-    background-position: center;    
+    background-image: url(/img/background.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 483px 463px; 
+    #background-attachment: fixed;
+    
 }
 
 header .header-content {
