@@ -224,7 +224,7 @@ header {
     height: 50%;
     background-color: #76a6c4;
     background-image: url(/img/background.png);
-    background-size: auto 200;
+    background-size: auto 200px;
 }
 
 header .header-content {
