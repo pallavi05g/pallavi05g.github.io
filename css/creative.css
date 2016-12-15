@@ -16,7 +16,7 @@ body {
 
 hr {
     max-width: 50px;
-    border-color: #76a6c4; <!--#f05f40;//Orange-->
+    border-color: #89BBBF; <!--#f05f40;//Orange-->
     border-width: 3px;
 }
 
@@ -72,7 +72,7 @@ p {
 }
 
 .bg-primary {
-    background-color: #76a6c4;<!--#f05f40;-Orange -->
+    background-color: #89BBBF;<!--#f05f40;-Orange -->
 }
 
 .bg-dark {
@@ -127,12 +127,12 @@ aside {
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #76a6c4;<!--#f05f40;-Orange -->
+    color: #153244;<!--#f05f40;-Orange -->
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #76a6c4!important;<!--#f05f40;-Orange -->
+    color: #153244!important;<!--#f05f40;-Orange -->
     background-color: transparent;
 }
 
@@ -153,7 +153,7 @@ aside {
 
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
-        color: #609CC4;
+        color: #153244;
     }
 
     .navbar-default .nav > li>a,
@@ -163,7 +163,7 @@ aside {
 
     .navbar-default .nav > li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
-        color: #76a6c4;
+        color: #153244;
         background-color: #ffffff;
     }
 
@@ -174,12 +174,12 @@ aside {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
-        color: #76a6c4;<!--#f05f40;-Orange -->
+        color: #153244;<!--#f05f40;-Orange -->
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #609CC4; <!--#eb3812;//Dark Orange-->
+        color: #153244; <!--#eb3812;//Dark Orange-->
     }
 
     .navbar-default.affix .nav > li>a,
@@ -189,12 +189,12 @@ aside {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #76a6c4;<!--#f05f40;-Orange -->
+        color: #153244;<!--#f05f40;-Orange -->
     }
 }
 
 .mynavbar{
-        background-color: #76a6c4;
+        background-color: #89BBBF;
         width:100%;
     }
 
@@ -229,7 +229,7 @@ header {
     text-align: center;
     color: #fff;
     height: 50%;
-    background-color: #76a6c4;
+    background-color: #89BBBF;
     background-image: url(/img/background.png);
     background-size: auto 200px;
 }
@@ -346,7 +346,7 @@ header .intro-text .skills {
     text-align: center;
     color: #fff;
     opacity: 0;
-    background: rgba(118,166,196,.9);<!--rgba(240,95,64,.9);-->
+    background: rgba(137,187,191,.9);
     -webkit-transition: all .25s;
     -moz-transition: all .25s;
     transition: all .25s;
@@ -395,7 +395,7 @@ header .intro-text .skills {
 }
 
 .text-primary {
-    color: #76a6c4;<!--#f05f40;-Orange -->
+    color: #89BBBF;<!--#f05f40;-Orange -->
 }
 
 .no-gutter > [class*=col-] {
@@ -457,9 +457,9 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-    border-color: #76a6c4;<!--#f05f40;-Orange -->
+    border-color: #89BBBF;<!--#f05f40;-Orange -->
     color: #fff;
-    background-color: #337ab7;<!--#f05f40;-Orange -->
+    background-color: #89BBBF;<!--#f05f40;-Orange -->
     -webkit-transition: all .25s;
     -moz-transition: all .25s;
     transition: all .25s;
@@ -473,7 +473,7 @@ fieldset[disabled] .btn-default.active {
 .open > .dropdown-toggle.btn-primary {
     border-color: #307ab7;<!--#ed431f;- Diff Orange -->
     color: #fff;
-    background-color: #477391; <!--#eb3812;//Dark Orange-->
+    background-color: #153244; <!--#eb3812;//Dark Orange-->
 }
 
 .btn-primary:active,
@@ -500,12 +500,12 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #76a6c4;<!--#f05f40;-Orange -->
-    background-color: #76a6c4;<!--#f05f40;-Orange -->
+    border-color: #89BBBF;<!--#f05f40;-Orange -->
+    background-color: #89BBBF;<!--#f05f40;-Orange -->
 }
 
 .btn-primary .badge {
-    color: #76a6c4;<!--#f05f40;-Orange -->
+    color: #89BBBF;<!--#f05f40;-Orange -->
     background-color: #fff;
 }
 
@@ -618,7 +618,7 @@ body {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-color: #76a6c4;
+    background-color: #89BBBF;
 }
 
 .calligraphy{
