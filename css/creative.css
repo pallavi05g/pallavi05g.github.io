@@ -31,6 +31,13 @@ a {
     transition: all .35s;
 }
 
+.myicon{
+    color: white;<!--#f05f40;-Orange -->
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
 a:hover,
 a:focus {
     color: #153244; <!--#eb3812;//Dark Orange-->
@@ -197,7 +204,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/background-3a.png);
+    background-image: url(../img/background-3.jpg);
     #opacity: .9;
     background-position: center;
     -webkit-background-size: cover;
@@ -681,7 +688,12 @@ body {
 }
 
 .mysection {
-    background-image: url(/img/background-3.jpg);
+    background-color: #E8E2CC;
+
+}
+
+.myfooter{
+    background-color: #89BBBF;
 }
 
 .proj-container{
