@@ -52,6 +52,11 @@ h6 {
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
 
+.project-headings{
+    color: #89bbbf;
+    border-bottom: 1px solid #eee;
+}
+
 p.main{
     font-family: 'helvetica neue', arial, sans-serif;
     font-kerning: auto;
@@ -687,15 +692,50 @@ body {
 		}
 }
 
-.mysection {
-    background-color: #E8E2CC;
-
-}
-
 .myfooter{
     background-color: #89BBBF;
 }
 
+.portfolio-section{
+    background-color: #E8E2CC;
+  
+}
 .proj-container{
     width:auto;
+}
+
+.proj-box{
+    padding: 15px;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,900);
+
+
+.module {
+  margin: 10px;
+  width: 230px;
+  height: 150px;
+  float: left;
+  position: relative;
+}
+
+.lr p {
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  margin: 0;
+}
+
+.proj-image-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 5px 10px;
+  color: white;
+  margin: 0;
+  font: 16px Sans-Serif;
+  width: auto;
 }
