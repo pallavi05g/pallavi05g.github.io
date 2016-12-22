@@ -57,6 +57,10 @@ h6 {
     border-bottom: 1px solid #eee;
 }
 
+.project-headings-on-blue-bckgrnd{
+    color: #153244;
+    border-bottom: 1px solid #eee;   
+}
 p.main{
     font-family: 'helvetica neue', arial, sans-serif;
     font-kerning: auto;
@@ -209,7 +213,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/background-3.jpg);
+    background-image: url(../img/background-main.jpg);
     #opacity: .9;
     background-position: center;
     -webkit-background-size: cover;
@@ -235,7 +239,7 @@ header {
     color: #fff;
     height: 50%;
     background-color: #89BBBF;
-    background-image: url(/img/background.png);
+    background-image: url(/img/other.png);
     background-size: auto 200px;
 }
 
@@ -738,4 +742,9 @@ body {
   margin: 0;
   font: 16px Sans-Serif;
   width: auto;
+}
+
+.figcaptioncolour{
+    color: #153244;
+   
 }
