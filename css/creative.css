@@ -11,7 +11,7 @@ body {
 }
 
 body {
-    font-family: "helvetica neue",'Helvetica Neue',Arial,sans-serif;
+    font-family: "helvetica neue", 'open sans',Arial,sans-serif;
 }
 
 hr {
@@ -49,7 +49,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'lato', 'open sans',Arial,sans-serif;
 }
 
 .project-headings{
@@ -107,7 +107,7 @@ aside {
 
 .navbar-default {
     border-color: rgba(34,34,34,.05);
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'lato', 'open sans',Arial,sans-serif;
     background-color: #fff;
     -webkit-transition: all .25s;<!-- .35 sec means lag observed -->
     -moz-transition: all .25s; <!-- .35 sec means lag observed -->
@@ -116,7 +116,7 @@ aside {
 
 .navbar-default .navbar-header .navbar-brand {
     text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'lato','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
     color: #ffffff;<!--#f05f40;-Orange -->
 }
@@ -278,7 +278,7 @@ header img {
 }
 header .intro-text .name {
   display: block;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:   "lato", "open sans", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2em;
@@ -372,7 +372,7 @@ header .intro-text .skills {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     padding: 0 15px;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'lato','Helvetica Neue',Arial,sans-serif;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -522,7 +522,7 @@ fieldset[disabled] .btn-primary.active {
     border: 0;
     border-radius: 300px;
     text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'lato', 'open sans',Arial,sans-serif;
     font-weight: 700;
 }
 
@@ -590,7 +590,7 @@ body {
   -o-transition: background-color 300ms ease;
   transition: background-color 300ms ease;
   color: white;
-  font: 'Helvetica Neue';
+  font: 'lato';
   font-size: 20px;
   font-weight: 100;
   text-align: center;
@@ -685,7 +685,7 @@ body {
 .intro-text {
     .name {
         display: block;
-        font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "lato", "open sans", Helvetica, Arial, sans-serif;
         text-transform: uppercase;
 		font-weight: 700;
         font-size: 2em;
@@ -747,4 +747,23 @@ body {
 .figcaptioncolour{
     color: #153244;
    
+}
+
+.carousel-control.left {
+  background-image: -webkit-linear-gradient(left, rgba(137, 187, 191, .5) 0%, rgba(137, 187, 191, .0001) 100%);
+  background-image:      -o-linear-gradient(left, rgba((137, 187, 191, .5) 0%, rgba((137, 187, 191, .0001) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba((137, 187, 191, .5)), to(rgba((137, 187, 191, .0001)));
+  background-image:         linear-gradient(to right, rgba((137, 187, 191 .5) 0%, rgba((137, 187, 191, .0001) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+  background-repeat: repeat-x;
+}
+.carousel-control.right {
+  right: 0;
+  left: auto;
+  background-image: -webkit-linear-gradient(left, rgba((137, 187, 191, .0001) 0%, rgba((137, 187, 191, .5) 100%);
+  background-image:      -o-linear-gradient(left, rgba((137, 187, 191, .0001) 0%, rgba((137, 187, 191, .5) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba((137, 187, 191, .0001)), to(rgba((137, 187, 191, .5)));
+  background-image:         linear-gradient(to right, rgba((137, 187, 191, .0001) 0%, rgba((137, 187, 191, .5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+  background-repeat: repeat-x;
 }

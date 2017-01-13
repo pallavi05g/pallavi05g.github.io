@@ -1,413 +1,523 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
+    <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-    <title>STOReeFY</title>
+        <title>STOReeFY</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 
-    <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+        <!-- Custom Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
 
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+        <!-- Plugin CSS -->
+        <link rel="stylesheet" href="css/animate.min.css" type="text/css">    
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/creative.css" type="text/css">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
+        <!-- Google Font -->
+        <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
 
-    <!-- Google Font -->
-    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
-    
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
 
-</head>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<body id="page-top">
+        <style>
+          .carousel-inner > .item > img,
+          .carousel-inner > .item > a > img {
+              width: 60%;
+              margin: auto;
+          }
+        </style>
 
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top mynavbar">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="/index.html">Pallavi Gupta</a>
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body id="page-top">
+
+        <!-- Navigation -->
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top mynavbar">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="/index.html">Pallavi Gupta</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a class="page-scroll" href="/index.html">Home</a>
+                        </li>
+                        <li>                       
+                            <a class="page-scroll" href="/index.html#portfolio">Portfolio</a>
+                        </li>
+                        <li>                       
+                            <a class="page-scroll" href="https://bit.ly/2hvynzk" target="_blank">Resume</a>
+                        </li> 
+                        <li>
+                            <a class="page-scroll" href="/index.html#contact">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
             </div>
+            <!-- /.container-fluid -->
+        </nav>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="/index.html">Home</a>
-                    </li>
-                    <li>                       
-                        <a class="page-scroll" href="/index.html#portfolio">Portfolio</a>
-                    </li>
-                    <li>                       
-                        <a class="page-scroll" href="https://bit.ly/2hvynzk" target="_blank">Resume</a>
-                    </li> 
-                    <li>
-                        <a class="page-scroll" href="/index.html#contact">Contact Me</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-    
-    <!-- Header -->
-        <div class="container proj-container">
-            <header class="otherpages">
-            <div class="row"><br><br></div>
-            <div class="row"><br><br></div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-text">
-                        <span class="name">STOReeFY</span>
-                        <hr class="star-light">
-                        <span class="skills">Interactive Storytelling through gamification of cultural folklore</span>
-                        <br><br>
+        <!-- Header -->
+            <div class="container proj-container">
+                <header class="otherpages">
+                <div class="row"><br><br></div>
+                <div class="row"><br><br></div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="intro-text">
+                            <span class="name">STOReeFY</span>
+                            <hr class="star-light">
+                            <span class="skills">Interactive Storytelling through gamification of cultural folklore</span>
+                            <br><br>
+                        </div>
                     </div>
                 </div>
-            </div>
-            </header>
-        </div>
-     
-    <!-- Page Content -->
-    <div class="container">
-
-        <!-- Portfolio Item Heading -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header project-headings">STOReeFY
-                    <small>Interaction Design Project</small>
-                </h1>
-            </div>
-        </div>
-    <!-- /.row -->    
-    
-         <!-- Portfolio Item Row -->
-        <div class="row">
-
-            <div class="col-md-8">
-                <img class="img-responsive" src="/img/portfolio/related_projects/project-main/storeefy.jpg" alt="">
+                </header>
             </div>
 
-            <div class="col-md-4">
-                <h3 class="project-headings">Project Description</h3>
-                <p>STOReeFY introduces an interactive way of listening to age-old stories. </p>
-                <ul>
-                <li>Wide collection of interactive stories to choose from </li>
-                <li>Curated story albums created from in-game tasks within the interactive story
-                </li>
-                <li>Popular stories based on what your peers are engaging with	
-                </li>                
-                </ul>
+        <!-- Page Content -->
+        <div class="container">
 
-                <h3 class="project-headings">Project Details</h3>
-                <ul>
-                    <li>When: Sept 2016 to Present</li>
-                    <li>Where: University of Michigan, Ann Arbor</li>
-                    <li>Role: Interaction Designer</li>
-                    <li>Project Type: Individual</li>
-                    <li>Time frame: 12 weeks</li>
-                </ul>
+            <!-- Portfolio Item Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header project-headings">STOReeFY
+                        <small>Interaction Design Project</small>
+                    </h1>
+                </div>
             </div>
+        <!-- /.row -->    
 
-        </div>
-        <!-- /.row -->
-        
-        
-        <!-- Problem Row -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h3 class="page-header project-headings">Problem</h3>
+             <!-- Portfolio Item Row -->
+            <div class="row">
+
+                <div class="col-md-8">
+                    <img class="img-responsive" src="/img/portfolio/related_projects/project-main/storeefy.jpg" alt="">
+                </div>
+
+                <div class="col-md-4">
+                    <h3 class="project-headings">Project Description</h3>
+                    <p>STOReeFY introduces an interactive way of listening to age-old stories. </p>
+                    <ul>
+                    <li>Wide collection of interactive stories to choose from </li>
+                    <li>Curated story albums created from in-game tasks within the interactive story
+                    </li>
+                    <li>Popular stories based on what your peers are engaging with	
+                    </li>                
+                    </ul>
+
+                    <h3 class="project-headings">Project Details</h3>
+                    <ul>
+                        <li>When: Sept 2016 to Present</li>
+                        <li>Where: University of Michigan, Ann Arbor</li>
+                        <li>Role: Interaction Designer</li>
+                        <li>Project Type: Individual</li>
+                        <li>Time frame: 12 weeks</li>
+                    </ul>
+                </div>
+
             </div>
-        </div>
-        <div class="col-lg-12">
-        <p>
-        With the advent of technology, there is a widening generation gap that is observed around the world. Right from early years, children are exposed to popular culture and media that is resulting in neglect towards culture awareness. Cultural folklore and tales are  limited to places of cultural interest or school events. Age-old storytelling that was a means of mutual bonding is no longer seen. Due to relatively few topics in common, conversations are non-existent between tech-challenged grandparents and folklore-challenged grandkids.         
-        </p>
-        </div>
-        <!-- End of Problem Row -->
-        
-        <!-- Target Audience Row -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h3 class="page-header project-headings">Target Audience</h3>
-            </div>
-            
-        </div>
-        <div class="col-lg-12">
-        <p>Young kids and older adults</p>
-        <p>Essentially anyone eager to have fun, learn about folklore and tales</p>
-        </div>
-        <!-- End of Target Audience  Row -->
-        
-        <!-- Target Solution  Row -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h3 class="page-header project-headings">Target Solution</h3>
+            <!-- /.row -->
+
+
+            <!-- Problem Row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="page-header project-headings">Problem</h3>
+                </div>
             </div>
             <div class="col-lg-12">
             <p>
-                In order to ensure a shared mutual experience between older folk and kids, instill cultural awareness in kids and familiarize older generation with technology, Storeefy introduces interactive storytelling through gamification of cultural folklore
+            With the advent of technology, there is a widening generation gap that is observed around the world. Right from early years, children are exposed to popular culture and media that is resulting in neglect towards culture awareness. Cultural folklore and tales are  limited to places of cultural interest or school events. Age-old storytelling that was a means of mutual bonding is no longer seen. Due to relatively few topics in common, conversations are non-existent between tech-challenged grandparents and folklore-challenged grandkids.         
             </p>
-            <div class="row" align="center">
-            <iframe width="972" height="720" src="//invis.io/659OONGW2" frameborder="0" allowfullscreen></iframe>
             </div>
-        </div>
-        
-        
-        <!-- Problem Row -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h3 class="page-header project-headings">Features</h3>
-            </div>
-        </div>
-        <div class="col-lg-12">
-        <ul>
-            <li>Rich collection of stories to choose from</li>
-            <li>In-game activities and rewards to keep you engaged</li>
-            <li>Story Moments to see how you aced the game</li>
-            <li>Personal story albums that you can share with your friends and family</li>
-            <li>Get custom results using our search and filters feature</li>
-            <li>Popular Stories section to see what your peers are engaging with</li>
-            <li>Recommendations based on your interests</li>
-            <li>History section to view how many stories you have learnt over time</li>
-        </ul>
-        </div>
-        <!-- End of Problem Row -->
+            <!-- End of Problem Row -->
 
-        <!-- Problem Row -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h3 class="page-header project-headings">Process Diagram</h3>
-            </div>
-        <img class="img-responsive portfolio-item" src="/img/process_diagrams/storeefy_diag.jpg" alt="">
-        </div>
-        <!-- End of Target Solution Row -->             
-        
-        <!-- Problem Row -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h3 class="page-header project-headings">Problem scoping</h3>
-                <p>This stage involved user research and competitor analysis.</p>
-                <ol>
-                    <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/qoc_part1.png" alt="">
-                    <br><br>
-                    <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/qoc_part2.png" alt="">
-                    <br><br>
-                <h3 class="page-header project-headings">Exploring the solution space</h3>
-                <p>This stage involved brainstorming individually and with peers to understand the problem better. I found peer feedback extremely useful as it gave me different perspectives to the problem that I was addressing. It was during these sessions that I realised that this problem is evident around the world and something has to be done about it. In order to make my divergent solutions more realistic, I sketched it all out. I started with a single solution and then progressed to 3 solutions and ended up with 8 different solutions.</p>
-                <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/brainstorming_notes.jpg" alt="">
-                <figcaption align="center" class="figcaptioncolour">Individual Brainstorming Notes</figcaption>
-                <br><br>
-                <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/eightsolutions.jpg" alt="">
-                <figcaption align="center" class="figcaptioncolour">Divergent Design Thinking</figcaption>
-
-
-                <h3 class="page-header project-headings">Finding a good solution</h3>
-                <p>This was an iterative process and involved storyboarding, brainstorming and design critique sessions, persona creation, user research and testing and refining solutions based on user feedback. At the end of this stage, I had a better idea of what my users thought the problem was and something that echoed out loud was "You are not your own user always." "Listen to the user." "There is no right answer."</p>
-                    <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/solutions_part1.png" alt="">
-                    <figcaption align="center" class="figcaptioncolour">Storyboarding Part 1</figcaption>
-                    <br><br>
-                    <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/solutions_part2.png" alt="">
-                    <figcaption align="center" class="figcaptioncolour">Storyboarding Part 2</figcaption>
-                <br><br>
-                <p>This was followed by brainstorming sessions which involved peer design critique and feedback. Throughout the design process, there was peer discussion to understand the loophooles in each other's design and this design critique was extremely useful to refine the solution. Additionally, the ethnically diverse peer feedback team helped me gain deep cultural insights from people around the world.</p>
-                <br>
-                    <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/brainstorming1.jpg" alt="">
-                    <figcaption align="center" class="figcaptioncolour">Brainstorming with post-its</figcaption>
-                    <br><br>
-                <h3 class="page-header project-headings">User Research for solution scoping</h3>
-                    <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/user_research_kid3.jpg" alt="">
-                    <figcaption align="center" class="figcaptioncolour">User Research</figcaption>
-                    <br><br>
-                <h3 class="page-header project-headings">Storyboarding and personas</h3>
-                    <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/persona1.jpg" alt="">
-                    <figcaption align="center" class="figcaptioncolour">Persona 1</figcaption>
-                    <br><br>
-                    <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/persona2.jpg" alt="">
-                    <figcaption align="center" class="figcaptioncolour">Persona 2</figcaption>
-                    <br><br>
-                    <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/persona3.jpg" alt="">
-                    <figcaption align="center" class="figcaptioncolour">Persona 3</figcaption>
-                </ol>
-                <h3 class="page-header project-headings">Refining the solution</h3>
-                <p>This process involved building prototypes of varying degrees. I started off with pen and paper for my low-fidelity prototypes and then moved on to tools like Sketch and Invision to build my high-fidelity prototypes. The image here shows the entire paper prototype that was built for this project. </p>
-                    <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/paper-prototypes.jpg" alt="">
-                    <figcaption align="center" class="figcaptioncolour">Paper Prototypes</figcaption>
-                    <br><br>
-                    <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/paperprototype5.jpg" alt="">
-                    <figcaption align="center" class="figcaptioncolour">Paper Prototyping Process</figcaption>
-                    <br><br>
-                <h3 class="page-header project-headings">High-fidelity prototypes</h3>
-                <p>This was built using tools like Sketch and Invision. The cute illustrations aren't my creation. I took those from Ramayana: Divine Loophole by Sanjay Patel, Pixar.</p>
-                <br>
-                    <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/high-fi/screen1.png" alt="">
-                    <br><br>
-                    <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/high-fi/screen2.png" alt="">
-                    <br><br>
-                    <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/high-fi/screen3.png" alt="">
-                    <br><br>
-                    <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/high-fi/screen4.png" alt="">
-                    <br><br>
-                    <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/high-fi/screen5.png" alt="">
-                    <br><br>
-                    <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/high-fi/screen6.png" alt="">
-                    <br><br>
-                    <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/high-fi/screen7.png" alt="">
-                    <br><br>
-            </div>
-        </div>
-        <div class="col-lg-12">
-        
-        
-        
-        </div>
-        <!-- End of Problem Row -->
-
-       <!-- Related Projects Row -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h3 class="page-header project-headings">Related Projects</h3>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-            <a href="/contextualinquiry.html" class="portfolio-box" data-toggle="modal">                    
-                <img class="img-responsive portfolio-item" src="/img/portfolio/related_projects/resized/contextual_inquiry.jpg" alt="">
-                <div class="portfolio-box-caption">
-                    <div class="portfolio-box-caption-content">
-                        <div class="project-category text-faded">
-                            Contextual Inquiry
-                        </div>
-                        <div class="project-name">
-                            Makerspaces Consulting Project                     
-                        </div>
-                    </div>
+            <!-- Target Audience Row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="page-header project-headings">Target Audience</h3>
                 </div>
-            </a>
+
             </div>
-            <div class="col-sm-3 col-xs-6">
-            <a href="/simplicity.html" class="portfolio-box" data-toggle="modal">
-                <img class="img-responsive portfolio-item" src="/img/portfolio/related_projects/resized/simplicity.jpg" alt="">                        
-                <div class="portfolio-box-caption">
-                    <div class="portfolio-box-caption-content">
-                        <div class="project-category text-faded">
-                            Interaction Design
-                        </div>
-                        <div class="project-name">
-                            Simplicity
-                        </div>
-                    </div>
+            <div class="col-lg-12">
+            <p>Young kids and older adults</p>
+            <p>Essentially anyone eager to have fun, learn about folklore and tales</p>
+            </div>
+            <!-- End of Target Audience  Row -->
+
+            <!-- Target Solution  Row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="page-header project-headings">Target Solution</h3>
                 </div>
-            </a>
-            </div>
-            <div class="col-sm-3 col-xs-6">
-                    <a href="/surfacetouch.html" class="portfolio-box" data-toggle="modal">
-                    <img class="img-responsive portfolio-item" src="/img/portfolio/related_projects/resized/surface_touch.jpg" alt="">                        
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Prototyping
-                                </div>
-                                <div class="project-name">
-                                    Surface Touch
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-            </div>
-            <div class="col-sm-3 col-xs-6">
-                    <a href="/deloittedesignjam.html" class="portfolio-box" data-toggle="modal">
-                    <img class="img-responsive portfolio-item" src="/img/portfolio/related_projects/resized/deloitte-design-jam.jpg" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Design Jam
-                                </div>
-                                <div class="project-name">
-                                    Deloitte Digital Design Jam
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-            </div>
-        </div>
-    <!--End of Related Projects row -->    
-    <div class="container">
-        <br><br>
-    </div> 
-            
-    <!-- Footer -->
-    <footer class="text-center">                
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Pallavi Gupta - 2016
-                    </div>
+                <div class="col-lg-12">
+                <p>
+                    In order to ensure a shared mutual experience between older folk and kids, instill cultural awareness in kids and familiarize older generation with technology, Storeefy introduces interactive storytelling through gamification of cultural folklore. Check this interactive prototype below.
+                </p>
+                <div class="row" align="center">
+                <iframe width="972" height="720" src="//invis.io/659OONGW2" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
-        </div>
-    </footer>
 
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
+            <!-- Problem Row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="page-header project-headings">Features</h3>
+                </div>
+            </div>
+            <div class="col-lg-12">
+            <ul>
+                <li>Rich collection of stories to choose from</li>
+                <li>In-game activities and rewards to keep you engaged</li>
+                <li>Story Moments to see how you aced the game</li>
+                <li>Personal story albums that you can share with your friends and family</li>
+                <li>Get custom results using our search and filters feature</li>
+                <li>Popular Stories section to see what your peers are engaging with</li>
+                <li>Recommendations based on your interests</li>
+                <li>History section to view how many stories you have learnt over time</li>
+            </ul>
+            </div>
+            <!-- End of Problem Row -->
+
+            <!-- Problem Row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="page-header project-headings">Process Diagram</h3>
+                </div>
+            <img class="img-responsive portfolio-item" src="/img/process_diagrams/storeefy_diag.jpg" alt="">
+            </div>
+            <!-- End of Target Solution Row -->             
+
+            <!-- Problem Row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="page-header project-headings">Problem scoping</h3>
+                    <p>This stage involved user research and competitor analysis.</p>
+                        <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/qoc_part1.png" alt="">
+                        <br><br>
+                        <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/qoc_part2.png" alt="">
+                        <br><br>
+                    <h3 class="page-header project-headings">Exploring the solution space</h3>
+                    <p>This stage involved brainstorming individually and with peers to understand the problem better. I found peer feedback extremely useful as it gave me different perspectives to the problem that I was addressing. It was during these sessions that I realised that this problem is evident around the world and something has to be done about it. In order to make my divergent solutions more realistic, I sketched it all out. I started with a single solution and then progressed to 3 solutions and ended up with 8 different solutions.</p>
+                    <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/brainstorming_notes.jpg" alt="">
+                    <figcaption align="center" class="figcaptioncolour">Individual Brainstorming Notes</figcaption>
+                    <br><br>
+                    <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/eightsolutions.jpg" alt="">
+                    <figcaption align="center" class="figcaptioncolour">Divergent Design Thinking</figcaption>
+
+
+                    <h3 class="page-header project-headings">Finding a good solution</h3>
+                    <p>This was an iterative process and involved storyboarding, brainstorming and design critique sessions, persona creation, user research and testing and refining solutions based on user feedback. At the end of this stage, I had a better idea of what my users thought the problem was and something that echoed out loud was "You are not your own user always." "Listen to the user." "There is no right answer."</p>
+                    <br><br>
+                </div>
+                </div>            
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+
+          <div class="item active">
+            <img src="/img/portfolio/Storeefy/solutions_part1.png" alt="">
+          </div>
+
+          <div class="item">
+            <img src="/img/portfolio/Storeefy/solutions_part2.png" alt="">
+          </div>
+          </div> 
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
         </a>
-    </div>
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="row">
+          <br><br>
+      </div>
+                    
+        <p>This was followed by brainstorming sessions which involved peer design critique and feedback. Throughout the design process, there was peer discussion to understand the loophooles in each other's design and this design critique was extremely useful to refine the solution. Additionally, the ethnically diverse peer feedback team helped me gain deep cultural insights from people around the world.</p>
+        <br>
+        <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/brainstorming1.jpg" alt="">
+        <figcaption align="center" class="figcaptioncolour">Brainstorming with post-its</figcaption>
+        <br><br>
+        
+        <h3 class="page-header project-headings">User Research for solution scoping</h3>
+        <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/user_research_kid3.jpg" alt="">
+        <figcaption align="center" class="figcaptioncolour">User Research</figcaption>
+        <br><br>
+        <h3 class="page-header project-headings">Personas</h3>     
     
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <div class="col-lg-12">
+      <br>
+      <div id="personas" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#personas" data-slide-to="0" class="active"></li>
+          <li data-target="#personas" data-slide-to="1"></li>
+          <li data-target="#personas" data-slide-to="2"></li>
+        </ol>
 
-  ga('create', 'UA-90243840-1', 'auto');
-  ga('send', 'pageview');
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
 
-    </script>
+          <div class="item active">
+            <img src="/img/portfolio/Storeefy/persona1.jpg" alt="">
+          </div>
 
-</body>
+          <div class="item">
+            <img src="/img/portfolio/Storeefy/persona2.jpg" alt="">
+          </div>
 
-</html>
+          <div class="item">
+            <img src="/img/portfolio/Storeefy/persona3.jpg" alt="">
+          </div>
+          </div> 
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#personas" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#personas" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="row">
+          <br><br>
+      </div> 
+            
+                    <h3 class="page-header project-headings">Refining the solution</h3>
+                    <p>This process involved building prototypes of varying degrees. I started off with pen and paper for my low-fidelity prototypes and then moved on to tools like Sketch and Invision to build my high-fidelity prototypes. The image here shows the entire paper prototype that was built for this project. </p>
+                        <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/paper-prototypes.jpg" alt="">
+                        <figcaption align="center" class="figcaptioncolour">Paper Prototypes</figcaption>
+                        <br><br>
+                        <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/paperprototype5.jpg" alt="">
+                        <figcaption align="center" class="figcaptioncolour">Paper Prototyping Process</figcaption>
+                        <br><br>
+                    <h3 class="page-header project-headings">High-fidelity prototypes</h3>
+                    <p>This was built using tools like Sketch and Invision. The cute illustrations aren't my creation. I took those from Ramayana: Divine Loophole by Sanjay Patel, Pixar.</p>
+                    <br>
+    <div class="col-lg-12">
+      <br>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+          <li data-target="#myCarousel" data-slide-to="6"></li>
+
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+
+          <div class="item active">
+            <img src="/img/portfolio/Storeefy/high-fi/screen1.png" alt="">
+          </div>
+
+          <div class="item">
+            <img src="/img/portfolio/Storeefy/high-fi/screen2.png" alt="">
+          </div>
+
+          <div class="item">
+            <img src="/img/portfolio/Storeefy/high-fi/screen3.png" alt="">
+          </div>
+
+          <div class="item">
+            <img src="/img/portfolio/Storeefy/high-fi/screen4.png" alt="">
+          </div>
+
+          <div class="item">
+            <img src="/img/portfolio/Storeefy/high-fi/screen5.png" alt="">
+          </div>
+
+          <div class="item">
+            <img src="/img/portfolio/Storeefy/high-fi/screen6.png" alt="">
+          </div>  
+
+          <div class="item">
+            <img src="/img/portfolio/Storeefy/high-fi/screen7.png" alt="">
+          </div> 
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    <br><br>
+    </div> 
+    </div>
+
+           <!-- Related Projects Row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="page-header project-headings">Related Projects</h3>
+                </div>
+
+                <div class="col-sm-3 col-xs-6">
+                <a href="/contextualinquiry.html" class="portfolio-box" data-toggle="modal">                    
+                    <img class="img-responsive portfolio-item" src="/img/portfolio/related_projects/resized/contextual_inquiry.jpg" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Contextual Inquiry
+                            </div>
+                            <div class="project-name">
+                                Makerspaces Consulting Project                     
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                <a href="/simplicity.html" class="portfolio-box" data-toggle="modal">
+                    <img class="img-responsive portfolio-item" src="/img/portfolio/related_projects/resized/simplicity.jpg" alt="">                        
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Interaction Design
+                            </div>
+                            <div class="project-name">
+                                Simplicity
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                        <a href="/surfacetouch.html" class="portfolio-box" data-toggle="modal">
+                        <img class="img-responsive portfolio-item" src="/img/portfolio/related_projects/resized/surface_touch.jpg" alt="">                        
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Prototyping
+                                    </div>
+                                    <div class="project-name">
+                                        Surface Touch
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                        <a href="/deloittedesignjam.html" class="portfolio-box" data-toggle="modal">
+                        <img class="img-responsive portfolio-item" src="/img/portfolio/related_projects/resized/deloitte-design-jam.jpg" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Design Jam
+                                    </div>
+                                    <div class="project-name">
+                                        Deloitte Digital Design Jam
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                </div>
+            </div>
+        <!--End of Related Projects row -->    
+        <div class="container">
+            <br><br>
+        </div> 
+        <!-- Footer -->
+        <footer class="text-center">                
+            <div class="footer-below">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            Copyright &copy; Pallavi Gupta - 2016
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+        <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+            <a class="btn btn-primary" href="#page-top">
+                <i class="fa fa-chevron-up"></i>
+            </a>
+        </div>
+        <!-- jQuery -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+        <!-- Contact Form JavaScript -->
+        <script src="js/jqBootstrapValidation.js"></script>
+        <script src="js/contact_me.js"></script>
+
+        <!-- Theme JavaScript -->
+        <script src="js/freelancer.min.js"></script>
+
+        <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-90243840-1', 'auto');
+      ga('send', 'pageview');
+
+        </script>
+
+    </body>
+
+    </html>
