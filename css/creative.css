@@ -344,6 +344,8 @@ header .intro-text .skills {
     position: relative;
     margin: 0 auto;
     max-width: 650px;
+    padding-top: 15px;
+    border: 1px solid #89BBBF;
 }
 
 .portfolio-box .portfolio-box-caption {
@@ -392,6 +394,7 @@ header .intro-text .skills {
 @media(min-width:768px) {
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
         font-size: 16px;
+        color:#153244;
     }
 
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
@@ -733,15 +736,15 @@ body {
 }
 
 .proj-image-text {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(137, 187, 191, 0.75);   
   padding: 5px 10px;
-  color: white;
-  margin: 0;
-  font: 16px Sans-Serif;
-  width: auto;
+  color: #153244;
+  font-family: 'lato','Helvetica Neue',Arial,sans-serif;  
+  font: 24px;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .figcaptioncolour{
