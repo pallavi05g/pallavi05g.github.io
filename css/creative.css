@@ -70,7 +70,6 @@ p.main{
     padding-top: 35px;
     #bottom: .3rem;
     top: 0px;
-    position:absolute; /* absolute position (so we can position it where we want)*/  
     bottom:0px; /* position will be on bottom */  
     width:100%; 
     position: relative;
@@ -220,7 +219,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #89BBBF;
-    background-image: url(../img/header.png);
+    background: url(../img/header.png) no-repeat center center; 
     background-repeat:no-repeat;
     background-size:contain;
     background-position:top;
