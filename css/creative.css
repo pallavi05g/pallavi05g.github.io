@@ -67,6 +67,13 @@ p.main{
     font-size: 20px;
     line-height: 1.5;
     color: #fff;
+    padding-top: 35px;
+    #bottom: .3rem;
+    top: 0px;
+    position:absolute; /* absolute position (so we can position it where we want)*/  
+    bottom:0px; /* position will be on bottom */  
+    width:100%; 
+    position: relative;
 
 }
 
@@ -118,7 +125,7 @@ aside {
     text-transform: uppercase;
     font-family: 'lato','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
-    color: #ffffff;<!--#f05f40;-Orange -->
+    color: #89BBBF;<!--#f05f40;-Orange -->
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
@@ -167,7 +174,7 @@ aside {
 
     .navbar-default .nav > li>a,
     .navbar-default .nav>li>a:focus {
-        color: #ffffff;
+        color: #153244;
     }
 
     .navbar-default .nav > li>a:hover,
@@ -212,13 +219,13 @@ header {
     width: 100%;
     min-height: auto;
     text-align: center;
-    color: #fff;
-    background-image: url(../img/background-main.jpg);
-    #opacity: .9;
-    background-position: center;
+    color: #89BBBF;
+    background-image: url(../img/header.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
     -o-background-size: cover;
 }
 
@@ -246,39 +253,42 @@ header {
 header .header-content {
     position: relative;
     width: 100%;
-    padding: 100px 15px;
+    padding: 20px 15px;
     text-align: center;
 }
 
 header .header-content .header-content-inner h1 {
     margin-top: 0;
     margin-bottom: 0;
-    text-transform: uppercase;
     font-weight: 700;
+    padding-top: 100px;
+    padding-bottom: 300px;
+    position: relative;
 }
 
 header .header-content .header-content-inner hr {
-    margin: 30px auto;
+    margin: 50px auto;
 }
 
 header .header-content .header-content-inner p {
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 300;
-    color: #fff;
+    color: #89BBBF;
+    
 }
 
 header .container {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 header img {
   display: block;
-  margin: 0 auto 20px;
+  margin: 0 auto 10px;
 }
 header .intro-text .name {
   display: block;
-  font-family:   "lato", "open sans", Helvetica, Arial, sans-serif;
+  font-family:   "raleway", "open sans", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2em;
@@ -307,9 +317,16 @@ header .intro-text .skills {
     }
 
     header .header-content .header-content-inner {
-        margin-right: auto;
-        margin-left: auto;
+        #margin-right: auto;
+        #margin-left: auto;
+        #max-width: 1000px;
+        
+        display: block;
+        position: relative;
+        margin: 0 auto;
         max-width: 1000px;
+        padding-top: 15px;
+
     }
 
     header .header-content .header-content-inner p {
