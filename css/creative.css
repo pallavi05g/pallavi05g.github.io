@@ -219,7 +219,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #89BBBF;
-    background: url(../img/header.png) no-repeat center center fixed; 
+    background: url(../img/header.png) no-repeat center center; 
     background-repeat:no-repeat;
     background-size:contain;
     background-position:top;
