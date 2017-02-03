@@ -61,7 +61,14 @@ h6 {
     color: #153244;
     border-bottom: 1px solid #eee;   
 }
-p.main{
+
+p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.main{
     font-family: 'helvetica neue', arial, sans-serif;
     font-kerning: auto;
     font-size: 20px;
@@ -72,14 +79,7 @@ p.main{
     top: 0px;
     bottom:0px; /* position will be on bottom */  
     width:100%; 
-    position: relative;
-
-}
-
-p {
-    margin-bottom: 20px;
-    font-size: 16px;
-    line-height: 1.5;
+    position: relative;    
 }
 
 .section-font{
