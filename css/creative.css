@@ -219,7 +219,8 @@ header {
     min-height: auto;
     text-align: center;
     color: #89BBBF;
-    background: url(../img/header.png) no-repeat center center; 
+    background-color: #FBFBFB;
+    /*background: url(../img/header.png) no-repeat center center;*/
     background-repeat:no-repeat;
     background-size:contain;
     background-position:top;
@@ -261,7 +262,7 @@ header .header-content .header-content-inner h1 {
     margin-bottom: 0;
     font-weight: 700;
     padding-top: 100px;
-    padding-bottom: 300px;
+    /*padding-bottom: 300px;*/
     position: relative;
 }
 
