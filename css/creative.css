@@ -662,6 +662,14 @@ body {
     background-image:url(/img/portfolio/tech-chronicles-modified.jpg); 
 }
 
+.coming-soon{
+    background-image:url(/img/portfolio/in_progress.jpg);
+    background-color: #FBFBFB;
+    background-size: 360px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .portfolio-modal .close-modal {
     position: absolute;
     top: 25px;
