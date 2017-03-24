@@ -11,7 +11,7 @@ body {
 }
 
 body {
-    font-family: "helvetica neue", 'open sans',Arial,sans-serif;
+    font-family: "open sans", "helvetica neue", arial, sans-serif;
 }
 
 hr {
@@ -83,7 +83,7 @@ p {
 }
 
 .section-font{
-    font-family: 'Helvetica Neue',Arial,sans-serif;
+    font-family: "open sans" ,Arial,sans-serif;
 }
 
 .bg-primary {
@@ -143,6 +143,7 @@ aside {
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
     color: #153244;<!--#f05f40;-Orange -->
+    background-color: #89bbbf;
 }
 
 .navbar-default .nav > li.active>a,
@@ -794,4 +795,22 @@ body {
   background-image:         linear-gradient(to right, rgba((137, 187, 191, .0001) 0%, rgba((137, 187, 191, .5) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
   background-repeat: repeat-x;
+}
+
+.featurelist {
+    font-size: 16px;
+}
+
+.rest {
+    background-color: #FBFBFB;
+}
+
+#parent {
+    width: 300px;
+}
+
+.image {
+    float: left;
+    width: 100px;
+    height: 100px;
 }
