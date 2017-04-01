@@ -97,10 +97,10 @@
             </div>
             <br><br><br>
             <div class="col-lg-6 col-lg-offset-3 text-center" align="center">
-                <button class="btn btn-default filter-button active" data-filter="all">All</button>
-                <button class="btn btn-default filter-button" data-filter="design">Design</button>
-                <button class="btn btn-default filter-button" data-filter="research">Research</button>
-                <button class="btn btn-default filter-button" data-filter="dev">Development</button>
+                <button class="btn btn-default filter-button" data-filter="all" id="all">All</button>
+                <button class="btn btn-default filter-button" data-filter="design" id="design">Design</button>
+                <button class="btn btn-default filter-button" data-filter="research" id="research">Research</button>
+                <button class="btn btn-default filter-button" data-filter="dev" id="dev">Development</button>
             </div>
             <br><br><br>
             <div class="row">
@@ -600,7 +600,6 @@
 //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
             $(".filter").not('.'+value).hide('3000');
             $('.filter').filter('.'+value).show('3000');
-            
         }
     });
 
