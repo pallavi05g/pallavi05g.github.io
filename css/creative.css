@@ -210,7 +210,7 @@ aside {
 }
 
 .mynavbar{
-        background-color: #89BBBF;
+        background-color: #FBFBFB;
         width:100%;
     }
 
@@ -662,6 +662,8 @@ body {
 .conferences{
     background-image:url(/img/portfolio/tech-chronicles-modified.jpg); 
 }
+
+
 
 .coming-soon{
     background-image:url(/img/portfolio/in_progress.jpg);

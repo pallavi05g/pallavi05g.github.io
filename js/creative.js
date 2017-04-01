@@ -54,6 +54,6 @@
         .fadeIn(1000)
         .end()
         .appendTo('#slideshow');
-    },  3000);
+    },  3000);   
 
 })(jQuery); // End of use strict

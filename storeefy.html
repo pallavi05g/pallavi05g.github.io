@@ -34,6 +34,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <script src="/js/myfunctions.js"></script>
 
         <style>
           .carousel-inner > .item > img,
@@ -55,7 +57,7 @@
     <body id="page-top">
 
         <!-- Navigation -->
-        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top mynavbar">
+       <nav id="mainNav" class="navbar navbar-default navbar-fixed-top mynavbar">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -65,7 +67,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand page-scroll" href="/index.html">Pallavi Gupta</a>
+                    <a class="page-scroll" href="/index.html"><img src="img/my-logo.png" class="img-responsive" alt="Pallavi Gupta"></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -135,7 +137,18 @@
 
             </div>
             <!-- /.row -->
-
+            
+            <!-- Pop up image -->
+            <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">              
+                  <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <img src="" class="imagepreview" style="width: 100%;" >
+                  </div>
+                </div>
+              </div>
+            </div>  
 
             <!-- Problem Row -->
             <div class="row">
@@ -143,9 +156,10 @@
                     <h3 class="page-header project-headings">Problem</h3>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <!--<div class="col-lg-3">
                 <img class="img-responsive" src="/img/process_diagrams/my_graphics/problem.png" alt="">            
-            </div>
+            </div>-->
+          
             <div class="col-lg-9">
             <p>
             With the advent of technology, there is a widening generation gap that is observed around the world. Right from early years, children are exposed to popular culture and media that is resulting in neglect towards culture awareness. Cultural folklore and tales are  limited to places of cultural interest or school events. Age-old storytelling that was a means of mutual bonding is no longer seen. Due to relatively few topics in common, conversations are non-existent between tech-challenged grandparents and folklore-challenged grandkids.         
@@ -173,9 +187,10 @@
                 </div>
                 <div class="col-lg-12">
                 <p>
-                    In order to ensure a shared mutual experience between older folk and kids, instill cultural awareness in kids and familiarize older generation with technology, Storeefy introduces interactive storytelling through gamification of cultural folklore. Check this interactive prototype below.
+                    In order to ensure a shared mutual experience between older folk and kids, instill cultural awareness in kids and familiarize older generation with technology, Storeefy introduces interactive storytelling through gamification of cultural folklore.
                 </p>
                 <div class="row" align="center">
+                <h3 class="project-headings">Try this interactive prototype below</h3>
                 <iframe width="972" height="720" src="//invis.io/659OONGW2" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
@@ -215,35 +230,38 @@
                 <div class="col-lg-12">
                     <h3 class="page-header project-headings">Problem scoping</h3>
                     <p>This stage involved independent research about the problem, reading papers and articles about the problem, competitor analysis and brainstorming. I interviewed older adults with children and grandchildren, either living with them or away from them, a couple with a young son, kids who were under the age of 5. All the interviews were conducted after taking a consent from the kids' parents. <b>My key takeaway was how any given problem impacts multiple stakeholders and as a designer, I should learn to address all their concerns.</b> Competitor analysis showed me how there have been some efforts in the past in this direction.</p>
-                    <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/brainstorming_notes.png" alt="">
+                    <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/brainstorming_notes.png" alt="Brainstorming notes">
+                    <!--<a href="#" class="pop">
+                        <img class="img-responsive pop" width="600" height="400" src="/img/portfolio/Storeefy/brainstorming_notes.png" alt="Brainstorming notes">
+                    </a>-->
                     <figcaption align="center" class="figcaptioncolour">Individual Brainstorming Notes</figcaption>
                     <br><br>
                     <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/user_research_kid3.jpg" alt="">
                     <figcaption align="center" class="figcaptioncolour">Understanding a kid's needs</figcaption>
                     <br><br>
                     <h3 class="page-header project-headings">Exploring the solution space</h3>
-                    <div class="col-lg-3">
+                    <!--<div class="col-lg-3">
                         <img class="img-responsive" src="/img/process_diagrams/my_graphics/interviews.png" alt="">   
-                    </div>
+                    </div>-->
                     <p>This stage involved brainstorming individually and with peers to understand the problem better. I found peer feedback extremely useful as it gave me different perspectives to the problem that I was addressing. <b>It was during these sessions that I realised that this problem is evident around the world and something has to be done about it.</b> In order to make my divergent solutions more realistic, I sketched it all out. I started with a single solution and then progressed to 3 solutions and created personas based on my preliminary research and interviews. <b>I learnt how looking at a problem using personas changed the way I addressed the problem.</b></p>                    
-                    <img class="img-responsive" src="/img/portfolio/Storeefy/personas.png" alt="">
+                    <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/personas.png" alt="">
                     <figcaption align="center" class="figcaptioncolour">Personas</figcaption>
                     <br><br>
-                    <img class="img-responsive" src="/img/portfolio/Storeefy/detailed_persona.png" alt="">
+                    <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/detailed_persona.png" alt="">
                     <figcaption align="center" class="figcaptioncolour">Detailed Persona</figcaption>
                     <br><br>
                     <h3 class="page-header project-headings">Finding a good solution</h3>
-                    <div class="col-lg-3">
+                    <!--<div class="col-lg-3">
                         <img class="img-responsive" src="/img/process_diagrams/my_graphics/prototyping.png" alt="">   
-                    </div>
+                    </div>-->
                     <p>This was an iterative process and involved storyboarding, brainstorming and design critique sessions, persona creation, user research and testing and refining solutions based on user feedback. <b>At the end of this stage, I had a better idea of what my users thought the problem was and something that echoed out loud was "You are not your own user always." "Listen to the user." "There is no right answer."</b></p>
-                    <img class="img-responsive" src="/img/portfolio/Storeefy/eightsolutions.jpg" alt="">
+                    <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/eightsolutions.jpg" alt="">
                     <figcaption align="center" class="figcaptioncolour">Divergent Thinking: Identifying 8 unique solutions</figcaption>
                     <br><br>
-                    <img class="img-responsive" src="/img/portfolio/Storeefy/solutions_part1.png" alt="">
+                    <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/solutions_part1.png" alt="">
                     <figcaption align="center" class="figcaptioncolour">Storyboarding First Set of Solutions</figcaption>
                     <br><br>
-                    <img class="img-responsive" src="/img/portfolio/Storeefy/solutions_part2.png" alt="">
+                    <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/solutions_part2.png" alt="">
                     <figcaption align="center" class="figcaptioncolour">Storyboarding Second Set of Solutions</figcaption>
                 </div>
                 </div>
@@ -256,23 +274,26 @@
         <figcaption align="center" class="figcaptioncolour">Brainstorming with post-its</figcaption>
         <br><br>
         <div id="parent">
-            <div class="image"><img class="img-responsive" src="/img/portfolio/Storeefy/qoc_part1.png" alt=""></div>
+            <div class="image"><img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/qoc_part1.png" alt=""></div>
             <br><br>
-            <div class="image"><img class="img-responsive" src="/img/portfolio/Storeefy/qoc_part2.png" alt=""></div>
+            <div class="image"><img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/qoc_part2.png" alt=""></div>
         </div>
         <figcaption align="center" class="figcaptioncolour">Creating a Questions-Options-Criteria (QOC) Diagram</figcaption>           
         <h3 class="page-header project-headings">Refining the solution</h3>
         <p>Based on my design rationale and insights from my user interviews, I narrowed down to prototyping the 2nd solution. <b>My initial assumption was that solution 1 or solution 3 would be the best solutions, however, I was wrong. I learnt that through my interviews and design critiques. </b>Soon after, I was involved in building prototypes of varying degrees. I started off with pen and paper for my low-fidelity prototype and then moved on to tools like Sketch and Invision to build my high-fidelity prototypes. The image here shows the entire paper prototype that was built for this project. </p>
-            <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/paper-prototypes.jpg" alt="">
-            <figcaption align="center" class="figcaptioncolour">Paper Prototypes</figcaption>
-            <br><br>
-            <img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/paperprototype5.jpg" alt="">
-            <figcaption align="center" class="figcaptioncolour">Paper Prototyping Process</figcaption>
-            <br><br>
-        <h3 class="page-header project-headings">High-fidelity prototypes</h3>
-        <div class="col-lg-3">
-            <img class="img-responsive" src="/img/process_diagrams/my_graphics/high_fi_prototyping.png" alt="">   
+        <div class="row" align="center">
+        <iframe width="600" height="400" align="center" src="https://www.youtube.com/embed/9nj5SakYeVA" frameborder="0" allowfullscreen></iframe>
         </div>
+        <!--<img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/paper-prototypes.jpg" alt="">-->
+        <figcaption align="center" class="figcaptioncolour">Paper Prototype</figcaption>
+            <br><br>
+            <!--<img class="img-responsive" width="600" height="400" src="/img/portfolio/Storeefy/paperprototype5.jpg" alt="">
+            <figcaption align="center" class="figcaptioncolour">Paper Prototyping Process</figcaption>
+            <br><br>-->
+        <h3 class="page-header project-headings">High-fidelity prototypes</h3>
+        <!--<div class="col-lg-3">
+            <img class="img-responsive" src="/img/process_diagrams/my_graphics/high_fi_prototyping.png" alt="">   
+        </div>-->
         <p>Paper prototyping is fun! <b>I learnt how paper prototyping is an inexpensive way to test a design. </b> After duly noting down mistakes from the paper prototyping phase, I decided to create my high-fidelity prototype. This was built using tools like Sketch and Invision. The cute illustrations aren't my creation. I took those from Ramayana: Divine Loophole by Sanjay Patel, Pixar.</p>
         <br>
 
