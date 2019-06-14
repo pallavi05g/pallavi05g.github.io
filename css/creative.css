@@ -55,11 +55,17 @@ h6 {
 .project-headings{
     color: #89bbbf;
     border-bottom: 1px solid #eee;
+    padding: 20px;
 }
 
 .project-headings-on-blue-bckgrnd{
     color: #153244;
     border-bottom: 1px solid #eee;   
+}
+
+.footer-border{
+    border-top: 1px solid #eee;
+    padding: 20px;
 }
 
 p {
@@ -71,6 +77,7 @@ p {
 .main{
     font-family: 'helvetica neue', arial, sans-serif;
     font-kerning: auto;
+    font-weight: 300;
     font-size: 20px;
     line-height: 1.5;
     color: #fff;
