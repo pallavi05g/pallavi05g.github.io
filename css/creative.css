@@ -187,7 +187,7 @@ aside {
     .navbar-default .nav > li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
         color: #153244;
-        background-color: #ffffff;
+        background-color: #FFFFFF;
     }
 
     .navbar-default.affix {
@@ -663,7 +663,7 @@ body {
 
 .coming-soon{
     background-image:url(/img/portfolio/in_progress.jpg);
-    background-color: #FBFBFB;
+    background-color: #FFFFFF; /*instead of FBFBFB*/
     background-size: 360px auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -800,7 +800,7 @@ body {
 }
 
 .rest {
-    background-color: #FBFBFB;
+    background-color: #FFFFFF; /*instead of FBFBFB*/
 }
 
 #parent {
