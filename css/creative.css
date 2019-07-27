@@ -56,8 +56,20 @@ h6 {
     color: #89bbbf;
     border-bottom: 1px solid #eee;
     padding: 20px;
+    padding-left: 0px;
 }
 
+.quick-info{
+    background-color: #eee;
+    color: #000;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.subheadings{
+    color: #89bbbf;
+    padding: 5px;
+}
 .project-headings-on-blue-bckgrnd{
     color: #153244;
     border-bottom: 1px solid #eee;   
@@ -646,20 +658,6 @@ body {
     color: #fff;
     background-color: #89BBBF;
 }
-
-.calligraphy{
-    background-image:url(/img/portfolio/calligraphy-modified.jpg); 
-}
-
-.debates{
-    background-image:url(/img/portfolio/debates.jpg); 
-}
-
-.conferences{
-    background-image:url(/img/portfolio/tech-chronicles-modified.jpg); 
-}
-
-
 
 .coming-soon{
     background-image:url(/img/portfolio/in_progress.jpg);
