@@ -68,8 +68,8 @@ h6 {
 
 .subheadings{
     color: #89bbbf;
-    padding: 5px;
 }
+
 .project-headings-on-blue-bckgrnd{
     color: #153244;
     border-bottom: 1px solid #eee;   
@@ -84,6 +84,7 @@ p {
     margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.5;
+    text-align: justify;
 }
 
 .main{
@@ -381,7 +382,7 @@ header .intro-text .skills {
     position: relative;
     margin: 0 auto;
     max-width: 650px;
-    padding-top: 15px;
+    padding-top: 0px;
     border: 1px solid #89BBBF;
 }
 
