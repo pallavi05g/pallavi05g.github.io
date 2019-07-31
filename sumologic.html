@@ -200,68 +200,10 @@
 
             <!-- Target Audience Row -->
             <div class="row col-lg-12">
-                <h3 class="project-headings">Prototype Demo</h3>
-                <p><br>Note: This product is scheduled to be launched in September 2019 at Sumo Logic's User Conference. Currently, it is available in a closed-beta for select customers. Due to confidentiality, product demo is not available.</p>
-                <br><br>
-                <div class="row col-lg-12" align="center">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_QxhX_jXBxc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
-                </div>
+                <h3 class="project-headings">Prototype Demo and Design Specifics</h3>
+                <p><br>Note: This product is scheduled to be launched in September 2019 at Sumo Logic's User Conference. Currently, it is available in a closed-beta for select customers. Due to confidentiality, product demo or specifics is not available.</p>
             </div>
             <!-- End of Target Audience  Row -->
-
-            <!-- Target Solution  Row -->
-            <div class="row col-lg-12">
-                <h3 class="project-headings">Design Specifics</h3>
-                <p><br>
-                    Based on Nielsen Norman's Usability Heuristics and qualitative data from our user research sessions, we were able to identify 4 major emerging themes: <b>Simplifying complexity</b> (Consistency and Standards), <b>Sense of Freedom</b> (Flexibilty and Efficiency of Use), <b>Seamless Interaction</b> (Recognition rather than recall), <b>Harsh Reality</b> (Match between system and real world). Let us look into each of these.
-                </p>
-                <h4 class="subheadings">Simplifying complexity</h4>
-                <p>
-                    Both <b>Kathy</b> and <b>Andre</b> found it hard to write queries during critical times. In order to simplify the query language, I started looking into the semantics of the platform's query language. For this, I did some independent research by reading our extensive documentation, talking to engineers in the organization, talking to the product managers about the product roadmap and timelines and doing some competitive research. While we have very distinct query language for logs and metrics, and the project scope was metrics, I went ahead delving deeper into that. 
-                </p>
-                    <br><br>
-                        <img class="img-responsive" width="1200" height="auto" src="/img/portfolio/SumoLogic/design_concept_iterations.png" alt="Design Concept Iterations">
-                        <figcaption align="center" class="figcaptioncolour">Design Concept Iterations</figcaption>
-                    <br><br> 
-                <p>
-                    Talking to our internal users gave us insights into what really mattered in the query language and how people grouped data. While some users preferred simpler lanugage, others were boggled by what those categories even meant. We observed that even the order of these mattered as they resulted in different kind of queries and had serious backend implications. 
-
-                    By the end of it, we broke it down into four broad categories: <b>Metric, Filter, Aggregation, Group By. </b>
-                    <br><br>
-                        <img class="img-responsive" width="1200" height="auto" src="/img/portfolio/SumoLogic/initial_state.png" alt="Initial State with  four categories: Metric, Filter, Aggregation, Group By">
-                        <figcaption align="center" class="figcaptioncolour">Initial State with four categories: Metric, Filter, Aggregation, Group By </figcaption>
-                    <br><br>
-                </p>
-                <h4 class="subheadings">Sense of Freedom</h4>
-                <p>
-                    When we spoke to our users who were like Kathy or Andre, we found that neither knew what to start typing. It was clear that we needed to have an autocomplete component that handles their unique cases. <b>Kathy</b> preferred location names such as <b>New York, Chicago or San Francisco</b>. Meanwhile, <b>Andre</b> wanted to gather insights about <b>us-east and us-west</b>. My challenge was to create a product that handled both their usecases.
-                    <br><br>
-                    Through informal interviews and query writing observations, we found that users wanted the freedom to write any kind of query and still have some structure. They wanted the platform to assist them as they would neither remember the syntax nor the exact values, unless they used the platform frequently. This led to an entire discussion about how the autocomplete functionality should behave and the technical limitations and feasibility of the same. Deciding the level of freedom that users should have when using a structured query builder was the core question. 
-                    <br><br>
-                        <img class="img-responsive" width="1200" height="auto" src="/img/portfolio/SumoLogic/autocomplete_designs.png" alt="Autocomplete Behavior Conceptual Designs">
-                        <figcaption align="center" class="figcaptioncolour">Autocomplete Behavior Conceptual Designs</figcaption>
-                    <br><br>
-                </p>    
-                <h4 class="subheadings">Seamless Interaction</h4>
-                <p>
-                    Both <b>Kathy</b> and <b>Andre</b> had critical problems to solve and had strict timelines. It was crazier for <b>Andre</b> as he had to handle mission-critical work at an unearthly hour. Both of them expected quick results and smooth interactions without any embellishments.
-                    <br><br>
-                    While the autocomplete conceptual designs gartnered a lot of interest, a lot of emphasis was put on the technical feasibility, load times (given we had to deal with dense datasets), standard IxD patterns and our project timelines. I had to rethink query-level user actions to cater to both novice and expert users. 
-                    <br><br>
-                    Leveraging the Design System reduced development cycles and ensured a modular design approach. Having worked in the core Design Systems team, I had a broader understanding of the addition of new components and their implications at the entire platform level. 
-                    <br><br>
-                        <img class="img-responsive" width="1200" height="auto" src="/img/portfolio/SumoLogic/autocomplete_ixd.png" alt="Autocomplete Interaction Design Patterns">
-                        <figcaption align="center" class="figcaptioncolour">Autocomplete Interaction Design Patterns</figcaption>
-                    <br><br>
-                </p>
-                <h4 class="subheadings">Harsh Reality</h4>
-                <p>
-                    <b>Kathy</b> and <b>Andre</b> were users who leveraged multiple queries to solve their respective problems. We learned that each of those queries could be really complex. Sometimes, users channelized results from the first query into the second and so on. Infact, <b>Andre</b> preferred keyboard over a mouse or a trackpad for writing queries or when dealing with code. Keyboard accessibility was another important aspect that we had to take into consideration. Error handling was yet another important aspect we addressed at this point. 
-                    <br><br>
-                        <img class="img-responsive" width="1200" height="auto" src="/img/portfolio/SumoLogic/harsh_reality.png" alt="Multi-Query Behavior and Error Handling">
-                        <figcaption align="center" class="figcaptioncolour">Multi-Query Behavior and Error Handling</figcaption>
-                    <br><br>
-            </div>
             
             <!-- Problem Row -->
             <div class="row col-lg-12">
@@ -272,7 +214,7 @@
                 <div class="col-md-6">
                     <p>
                         <br><br>
-                        With the help of the new structured query builder, <b>Kathy</b> was able to successfully figure out new routes that had to be introduced based on trending tourism spots, social media tags and her airline's passenger traffic during various times of the year. In fact, she was able to create dashboards that gave her rich information at an international scale. 
+                        With the help of the new query builder, <b>Kathy</b> was able to successfully figure out new routes that had to be introduced based on trending tourism spots, social media tags and her airline's passenger traffic during various times of the year. In fact, she was able to create dashboards that gave her rich information at an international scale. 
                         <br><br> 
                         On the other hand, <b>Andre</b> was able to single-handedly pinpoint what led to the system breakdown and get the systems up and running without having to alert another soul.
                         <br><br>
@@ -304,75 +246,7 @@
                     </p>
                 </div>
             </div>
-
-           <!-- Related Projects Row 
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 class="page-header project-headings">Related Projects</h3>
-                </div>
-
-                <div class="col-sm-3 col-xs-6">
-                <a href="/storeefy.html" class="portfolio-box" data-toggle="modal">                    
-                    <img class="img-responsive portfolio-item" src="/img/project_images/storeefy.jpg" width="500px" height="300px" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Interaction Design
-                            </div>
-                            <div class="project-name">
-                                STOReeFY                     
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                </div>
-                <div class="col-sm-3 col-xs-6">
-                        <a href="/brainstory.html" class="portfolio-box" data-toggle="modal">
-                        <img class="img-responsive portfolio-item" src="/img/project_images/brainstory.jpg" width="500px" height="300px" alt="">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                        Multi Modal Design
-                                    </div>
-                                    <div class="project-name">
-                                        BrainStory
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                </div>
-                <div class="col-sm-3 col-xs-6">
-                <a href="/simplicity.html" class="portfolio-box" data-toggle="modal">
-                    <img class="img-responsive portfolio-item" src="/img/project_images/simplicity.jpg" width="500px" height="300px" alt="">                        
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Interaction Design
-                            </div>
-                            <div class="project-name">
-                                Simplicity
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                </div>
-                <div class="col-sm-3 col-xs-6">
-                        <a href="/surfacetouch.html" class="portfolio-box" data-toggle="modal">
-                        <img class="img-responsive portfolio-item" src="/img/project_images/surface_touch.jpg" width="500px" height="300px" alt="">                        
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                        Prototyping
-                                    </div>
-                                    <div class="project-name">
-                                        Surface Touch
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                </div>
-            </div>
-        <!--End of Related Projects row -->    
+ 
         <div class="container">
             <br><br>
         </div> 

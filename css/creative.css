@@ -71,6 +71,10 @@ h6 {
     padding-bottom: 100px;
 }
 
+.project-description{
+    line-height: 1.5;
+}
+
 .chip {
     display: inline-block;
     padding: 0 25px;
@@ -78,7 +82,14 @@ h6 {
     font-size: 16px;
     line-height: 40px;
     border-radius: 25px;
-    background-color: #eee;
+    background-color: #deeced;
+    color: #509195;
+    margin: 1%;
+}
+
+.project-cover{
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .subheadings{
