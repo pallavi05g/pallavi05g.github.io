@@ -67,12 +67,18 @@ h6 {
 }
 
 .project-pitch{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.project-oneliner{
+    line-height: 1.5;
+    font-weight: 600;
 }
 
 .project-description{
     line-height: 1.5;
+    font-weight: 300;
 }
 
 .chip {
@@ -111,6 +117,7 @@ p {
     font-size: 16px;
     line-height: 1.5;
     text-align: justify;
+    font-weight: 300;
 }
 
 .main{
@@ -632,6 +639,11 @@ body {
     font-size: 20px;
 }
 
+.design-rationale{
+    padding-top: 100px;
+}
+
+
 .button {
   display: block;
   width: 25%;
@@ -826,10 +838,6 @@ body {
 
 .rest {
     background-color: #FFFFFF; /*instead of FBFBFB*/
-}
-
-#parent {
-    width: 300px;
 }
 
 .image {
