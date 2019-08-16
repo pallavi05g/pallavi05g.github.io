@@ -11,7 +11,7 @@ body {
 }
 
 body {
-    font-family: "open sans", "helvetica neue", arial, sans-serif;
+    font-family: 'open sans', 'helvetica neue', 'arial', sans-serif;
 }
 
 hr {
@@ -40,7 +40,14 @@ a {
 
 a:hover,
 a:focus {
-    color: #153244; 
+    color: #366063; 
+}
+
+.points{
+    color: #89BBBF;
+    border-radius: 25px;
+    background-color: #deeced;
+    padding: 5px 10px 5px 10px;
 }
 
 h1,
@@ -49,12 +56,35 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'lato', 'open sans',Arial,sans-serif;
+    font-family: 'open sans', 'Arial', sans-serif;
 }
 
 .project-headings{
+    color: #366063;
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    padding-left: 0px;
+    font-size: 40px;
+}
+
+.subheadings{
     color: #89bbbf;
     border-bottom: 1px solid #eee;
+    padding: 10px;
+    padding-left: 0;
+    font-size: 30px;
+}
+
+.cover-content{
+    color: #89bbbf;
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    padding-left: 0px;
+    font-size: 30px;
+}
+
+.project-cover{
+    border-bottom: 1px solid #c2c2c2;
     padding: 20px;
     padding-left: 0px;
 }
@@ -64,6 +94,11 @@ h6 {
     color: #000;
     font-size: 14px;
     padding: 5px;
+}
+
+.personas{
+    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .project-pitch{
@@ -93,17 +128,17 @@ h6 {
     margin: 1%;
 }
 
+.project-title{
+    align-self: flex-start;
+}
+
 .project-cover{
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
-.subheadings{
-    color: #89bbbf;
-}
-
 .project-headings-on-blue-bckgrnd{
-    color: #153244;
+    color: #366063;
     border-bottom: 1px solid #eee;   
 }
 
@@ -120,8 +155,24 @@ p {
     font-weight: 300;
 }
 
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .main{
-    font-family: 'helvetica neue', arial, sans-serif;
+    font-family: 'open sans', 'helvetica neue', 'Arial', sans-serif;
     font-kerning: auto;
     font-weight: 300;
     font-size: 20px;
@@ -136,7 +187,7 @@ p {
 }
 
 .section-font{
-    font-family: "open sans" ,Arial,sans-serif;
+    font-family: 'open sans', 'helvetica neue', 'Arial', sans-serif;
 }
 
 .bg-primary {
@@ -161,7 +212,7 @@ aside {
 }
 
 .no-padding {
-    padding: 0;
+    padding: 100px;
 }
 
 .navbar-default {
@@ -195,13 +246,13 @@ aside {
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #153244;<!--#f05f40;-Orange -->
+    color: #366063;<!--#f05f40;-Orange -->
     background-color: #89bbbf;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #153244!important;<!--#f05f40;-Orange -->
+    color: #366063!important;<!--#f05f40;-Orange -->
     background-color: transparent;
 }
 
@@ -222,17 +273,17 @@ aside {
 
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
-        color: #153244;
+        color: #366063;
     }
 
     .navbar-default .nav > li>a,
     .navbar-default .nav>li>a:focus {
-        color: #153244;
+        color: #366063;
     }
 
     .navbar-default .nav > li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
-        color: #153244;
+        color: #366063;
         background-color: #FFFFFF;
     }
 
@@ -243,12 +294,12 @@ aside {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
-        color: #153244; /* #f05f40;-Orange*/
+        color: #366063; /* #f05f40;-Orange*/
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #153244; /* #eb3812;//Dark Orange */
+        color: #366063; /* #eb3812;//Dark Orange */
     }
 
     .navbar-default.affix .nav > li>a,
@@ -258,7 +309,7 @@ aside {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #153244;/*--#f05f40;-Orange */
+        color: #366063;/*--#f05f40;-Orange */
     }
 }
 
@@ -272,7 +323,7 @@ header {
     width: 100%;
     min-height: auto;
     text-align: center;
-    color: #89BBBF;
+    color: #FFFFFF;
     background-color: #FFFFFF; /* instead of FBFBFB */
     /*background: url(../img/header.png) no-repeat center center;*/
     background-repeat:no-repeat;
@@ -309,6 +360,7 @@ header .header-content {
     width: 100%;
     padding: 20px 15px;
     text-align: center;
+    background: #FFFFFF;
 }
 
 header .header-content .header-content-inner h1 {
@@ -346,13 +398,13 @@ header .intro-text .name {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2em;
-  color: #153244;
+  color: #366063;
 }
 
 header .intro-text .skills {
   font-size: 1.25em;
   font-weight: 300;
-  color: #153244;
+  color: #366063;
     
 }
 
@@ -413,7 +465,7 @@ header .intro-text .skills {
 .portfolio-box {
     display: block;
     position: relative;
-    margin: 0 auto;
+    margin: 20px;
     max-width: 650px;
     padding-top: 0px;
     border: 1px solid #89BBBF;
@@ -465,7 +517,7 @@ header .intro-text .skills {
 @media(min-width:768px) {
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
         font-size: 16px;
-        color:#153244;
+        color:#366063;
     }
 
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
@@ -554,9 +606,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: #153244;<!--#ed431f;- Diff Orange -->
+    border-color: #366063;<!--#ed431f;- Diff Orange -->
     color: #fff;
-    background-color: #153244; <!--#eb3812;//Dark Orange-->
+    background-color: #366063; <!--#eb3812;//Dark Orange-->
 }
 
 .btn-primary:active,
@@ -640,7 +692,7 @@ body {
 }
 
 .design-rationale{
-    padding-top: 100px;
+    padding-top: 20px;
 }
 
 
@@ -797,19 +849,20 @@ body {
 }
 
 .proj-image-text {
-  background: rgba(137, 187, 191, 0.75);   
-  padding: 5px 10px;
-  color: #153244;
-  font-family: 'lato','Helvetica Neue',Arial,sans-serif;  
-  font: 24px;
-  display: block;
-  position: relative;
-  margin: 0 auto;
-  width: 100%;
+    background: rgba(137, 187, 191, 0.25);   
+    padding: 10px 10px;
+    color: #366063;
+    font-family: 'lato','Helvetica Neue','Arial',sans-serif;  
+    font: 24px;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 20px;
 }
 
 .figcaptioncolour{
-    color: #153244;
+    color: #366063;
    
 }
 
