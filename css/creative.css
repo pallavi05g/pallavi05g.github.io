@@ -465,7 +465,7 @@ header .intro-text .skills {
 .portfolio-box {
     display: block;
     position: relative;
-    margin: 20px;
+    margin: 0 auto;
     max-width: 650px;
     padding-top: 0px;
     border: 1px solid #89BBBF;
