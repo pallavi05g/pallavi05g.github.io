@@ -126,6 +126,12 @@ h6 {
     background-color: #deeced;
     color: #509195;
     margin: 1%;
+    margin-left: 0;
+}
+
+.blocks{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .project-title{
