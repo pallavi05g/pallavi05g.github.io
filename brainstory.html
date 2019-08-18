@@ -107,7 +107,7 @@
                     <h1 class="page-header project-headings">BrainStory</h1>               
                     <h4 class="project-oneliner">Recreating memorable experiences as art pieces through your brain waves</h4>
                     <br>
-                    <p class="project-description">Designed and programmed a multi-modal application that changes the way people narrate memorable stories</p>
+                    <p class="project-description">Designed and programmed a multi-modal application that changes the way people narrate memorable stories in a team of 3</p>
                     <div class="chip">Prototyping</div>
                     <div class="chip">Multi-modal Design</div>
                     <div class="chip">Concept Design</div>
@@ -126,7 +126,9 @@
             <div class="row col-lg-12">
                 <h3 class="project-headings">Problem Statement</h3>
                 <p>
-                    The prompt given to us revolved around Condillac’s statue whose senses would be awakened one after the one creating awareness of other objects in space. Condillac maintained that it is only through touch that we gain an understanding of space as an external continuum extending outwards beyond the bounds of our bodies, and gather an awareness of other objects in space. We wanted to build beyond this and question what really makes us human. <b> It is emotion and our ability to describe it in words that differentiates us from other living beings. Emotion, combined with all other senses is what makes us truly human. </b> We decided to build off of this idea. 
+                    The prompt given to us revolved around Condillac’s statue whose senses would be awakened one after the one creating awareness of other objects in space. Condillac maintained that it is only through touch that we gain an understanding of space as an external continuum extending outwards beyond the bounds of our bodies, and gather an awareness of other objects in space. 
+                    <br><br>
+                    We wanted to build beyond this and question what really makes us human. <b> It is emotion and our ability to describe it in words that differentiates us from other living beings. Emotion, combined with all other senses is what makes us truly human. </b> We decided to build off of this idea. 
                 </p>
             </div>
             <!-- End of Problem Row -->
@@ -153,36 +155,40 @@
             <!-- End Row -->             
 
             <!-- Start Row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 class="project-headings">Problem Scoping</h3>
-                    <p>We started thinking about the prompt given to us and the infinite possibilities. We came up with a lot of ideas, first individually and then we decided to discuss our individual interpretations. Since, each of us came in from different backgrounds, we had some pretty unique insights to contribute to the project. Our initial idea was to create an interactive room where we would bring in the user and subject him/her to a series of music tones and visuals. We would modulate the lights and musical notes to transport the user into different scenarios such as a beach, a party, a picnic, school to invoke nostalgic personal experiences with friends and family. We decided to add elements of music, emotion, lights, sounds. In order to measure rate of change, we thought we could use either use breathing rate or heart rate. However, when we started questioning our idea, we realised that it had constraints such as time and resources that we hadn’t considered initially. <b>We had to eliminate this idea as we figured out that time would be a constraint to create an interactive room installation. </b>Our ideas revolved around stories, emotion, sound, visual art.</p>
-                    
-                    <h3 class="project-headings">Exploring the solution space</h3>
-                    <p>We wanted to understand what is already there in the space. Initially, we wanted to capture our heart rate or breathing rate to create something. We were suggested to use Microsoft Bands to capture certain signals. However, we decided against it due to constraints such as time and prior expertise. <b> Instead, we decided to capture our EEG signals to create something. </b> But our question was how could we control the EEG signals that are generated. We decided to use some external factors such as music or sound to control the signals generated. However, during one of our detailed brainstorming sessions, we decided to narrow it down to personal user stories. We got super excited as users would be able to preserve their stories as art pieces for life.</p>
-                    <img class="img-responsive" src="/img/portfolio/BrainStory/eeg_signals.jpg" alt="EEG Signals captured by the headset">
-                    <figcaption align="center" class="figcaptioncolour">EEG Signals captured by the headset</figcaption>
+            <div class="row col-lg-12">
+                <h3 class="project-headings">Problem Scoping</h3>
+                <p>We started thinking about the prompt given to us and the infinite possibilities. We came up with a lot of ideas, first individually and then we decided to discuss our individual interpretations. Since, each of us came in from different backgrounds, we had some pretty unique insights to contribute to the project. 
+                <br><br>    
+                Our initial idea was to create an interactive room where we would bring in the user and subject him/her to a series of music tones and visuals. We would modulate the lights and musical notes to transport the user into different scenarios such as a beach, a party, a picnic, school to invoke nostalgic personal experiences with friends and family. We decided to add elements of music, emotion, lights, sounds. In order to measure rate of change, we thought we could use either use breathing rate or heart rate. However, when we started questioning our idea, we realised that it had constraints such as time and resources that we hadn’t considered initially. We had to eliminate this idea as we figured out that time would be a constraint to create an interactive room installation. Our ideas revolved around stories, emotion, sound, visual art.</p>
 
-                    <h3 class="page-header project-headings">Prototyping Materials</h3>
-                    <img class="img-responsive" src="/img/portfolio/BrainStory/materials.png" alt="Prototyping Materials">
-                    
-                    <h3 class="project-headings">Working</h3>
-                    <p>We started tinkering with code to fetch signals from the MindFlex Headset that we had. Whenever you concentrate, you generate brainwave activity. Mindflex Duel (MindFlex Duel, n.a.) uses a variation of EEG technology to "read" the intensity of these brainwaves via sensors positioned on your forehead and ear. These sensors don't generate or interfere with brain waves, they only read what is already there. We decided to read these signals and feed it into another system using an Arduino to create beautiful visual patterns.</p>
-                    <img class="img-responsive" src="/img/portfolio/BrainStory/experiment.jpg" alt="EEG Signals captured by the headset">
-                    <figcaption align="center" class="figcaptioncolour">EEG Signals captured by the headset</figcaption>
-                    <br>
-                    <p>In order to use our application, a user is asked to wear the headset. The headset must be worn in such a way that the sensor (looks like a metal coin) must touch the forehead and the clips must be clamped onto the ears. This is connected to the Arduino board that captures the brainwave signals and feeds it into the application system real-time. The application utilizes these values and creates a visual artistic pattern on the screen thanks to the magic of the particle generator systems.  We used “Attentive” and “Meditative” values to control the art piece that would be created by tracking a user’s brain signals. We used a particle generator to create art and used the signals from the EEG headset to control the hues from the color wheel and the rate at which the particles fall. <b>By using multiple particle generators we were able to create abstract art. </b> We use a person’s story to alter his/her brainwave signals to create random patterns that can be captured. The tool that we created captures frames in the art sequence that signify special moments for that person. These can be printed out on high quality photo paper, framed and preserved as a beautiful personal momento.</p>
-                    <img class="img-responsive" src="/img/portfolio/BrainStory/result.jpg" alt="Visual Art created by our application BrainStory">
-                    <figcaption align="center" class="figcaptioncolour">Visual Art created by our application BrainStory</figcaption>
-                    
-                    <h3 class="project-headings">Future Scope</h3>
-                    <p><b>The future vision for this project is a wearable that captures a person’s brain signals and transmits it to our application tool that would create a personal artifact that can be 3D printed.</b> In addition to this, we would ask both the narrator and the listener to wear the headset to create two art pieces for the same story. We would also aim to utilise all the brainwave signals to create different patterns and alter hues and their intensities. This project is a proof-of-concept prototype to demonstrate how we can control applications using our thoughts and emotions. This is an exciting field and there is a lot to look forward to!</p>
-                    <img class="img-responsive" src="/img/portfolio/BrainStory/brainstory_main.png" alt="Understanding art created by brain waves">
+                <h3 class="project-headings">Solution Exploration</h3>
+                <p>We wanted to understand what is already there in the space. Initially, we wanted to capture our heart rate or breathing rate to create something. We were suggested to use Microsoft Bands to capture certain signals. However, we decided against it due to constraints such as time and prior expertise. <b> Instead, we decided to capture our EEG signals to create something. </b> But our question was how could we control the EEG signals that are generated. We decided to use some external factors such as music or sound to control the signals generated. However, during one of our detailed brainstorming sessions, we decided to narrow it down to personal user stories. We got super excited as users would be able to preserve their stories as art pieces for life.</p>
+                <img class="img-responsive" src="/img/portfolio/BrainStory/eeg_signals.jpg" alt="EEG Signals captured by the headset">
+                <figcaption align="center" class="figcaptioncolour">EEG Signals captured by the headset</figcaption>
+                
+                <h3 class="page-header project-headings">Prototyping Materials</h3>
+                <img class="img-responsive" src="/img/portfolio/BrainStory/materials.png" alt="Prototyping Materials">
+                
+                <h3 class="project-headings">Working</h3>
+                <img class="img-responsive" src="/img/portfolio/BrainStory/brainstory-working.png" alt="Brainstory - The Working">
+                <p>Simply put, whenever you concentrate, you generate brainwave activity. Based on your emotional state, the kind of brainwaves varies. Mindflex Duel (MindFlex Duel, n.a.) uses a variation of EEG technology to "read" the intensity of these brainwaves via sensors positioned on your forehead and ear. These sensors don't generate or interfere with brain waves in any way. They only read what is already there. We decided to read these signals and feed it into another system using an Arduino to create beautiful visual patterns.</p>
+                <br>
+                <img class="img-responsive" src="/img/portfolio/BrainStory/experiment.jpg" alt="EEG Signals captured by the headset">
+                <br>
+                <p>Technically speaking, we asked users to talk about something they cherished. We also asked them to talk about something that was painful. EEG signals with <b>"Attentive" and "Meditative"</b> values differ based on emotion. We captured these values to control the art piece that would be created by tracking a user’s EEG (electroencephalogram) signals. We used a particle generator to create art and used the signals from the EEG headset to control the hues from the color wheel and the rate at which the particles fall.
+                <br><br>    
+                <b>By using multiple particle generators we were able to create abstract art.</b> We use a person’s story to alter his/her brainwave signals to create random patterns that can be captured. The tool that we created captures frames in the art sequence that signify special moments for that person. These can be printed out on high quality photo paper, framed and preserved as a beautiful personal momento.</p>
+                <img class="img-responsive" src="/img/portfolio/BrainStory/brainstory_main.png" alt="Visual Art created by our application BrainStory">
+                <figcaption align="center" class="figcaptioncolour">Visual Art created by our application BrainStory</figcaption>
+
+                <h3 class="project-headings">Future Scope</h3>
+                <p><b>The future vision for this project is a wearable that captures a person’s brain signals and transmits it to our application tool that would create a personal artifact that can be 3D printed.</b> In addition to this, we would ask both the narrator and the listener to wear the headset to create two art pieces for the same story. We would also aim to utilise all the brainwave signals to create different patterns and alter hues and their intensities.
+                <br><br>    
+                This project is a proof-of-concept prototype to demonstrate how we can control applications using our thoughts and emotions. This is an exciting field and there is a lot to look forward to!</p>
                 </div>
-                </div> 
             <!-- End Row -->
             </div>
-        </div>
+            <!-- End Container-->
 
         <!-- Footer -->
         <footer class="text-center">                
