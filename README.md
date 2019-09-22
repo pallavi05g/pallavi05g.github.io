@@ -1,2 +1,1 @@
-# pallavi05g.github.io
-My Personal Website
+# Pallavi Gupta's Portfolio Website
