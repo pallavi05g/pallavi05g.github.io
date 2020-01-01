@@ -98,8 +98,56 @@
 <div class="container">
   <h1 class="display-6 text-center mb-4 mt-4">Projects</h1>
   <div class="row" id="portfolio">
-    <!-- Team Member 1 -->
-    <div class="col-xl-4 col-md-6 mb-4 mt-4">
+    <!-- Category 0 -->
+    <div class="col-lg-3 col-md-6 mb-4 mt-4">
+        <button class="btn btn-default filter-button" data-filter="all">
+            <div class="card border-0 shadow">
+            <img src="/img/project-cover/all.png" class="card-img-top" alt="All Projects">
+            <h5 class="card-text text-black-50 text-center mt-2 mb-2">All</h5>   
+            </div>
+        </button>
+    </div>
+    <!-- Category 1 -->
+    <div class="col-lg-3 col-md-6 mb-4 mt-4">
+        <button class="btn btn-default filter-button" data-filter="industry">
+            <div class="card border-0 shadow">
+            <img src="/img/project-cover/industry.png" class="card-img-top" alt="Industry Projects">
+            <h5 class="card-text text-black-50 text-center mt-2 mb-2">Industry</h5>   
+            </div>
+        </button>
+    </div>
+    <!-- Category 2 -->
+    <div class="col-lg-3 col-md-6 mb-4 mt-4">
+        <button class="btn btn-default filter-button" data-filter="concept">
+            <div class="card border-0 shadow">
+            <img src="/img/project-cover/conceptual.png" class="card-img-top" alt="Industry Projects">
+            <h5 class="card-text text-black-50 text-center mt-2 mb-2">Concept Design</h5>   
+            </div>
+        </button>
+    </div> 
+          
+    <!-- Category 3 -->
+    <div class="col-lg-3 col-md-6 mb-4 mt-4">
+        <button class="btn btn-default filter-button" data-filter="research">
+            <div class="card border-0 shadow">
+            <img src="/img/project-cover/hci.png" class="card-img-top" alt="Concept Design Projects">
+            <h5 class="card-text text-black-50 text-center mt-2 mb-2">HCI Research</h5>   
+            </div>
+        </button>
+      </div>
+    </div>
+  <!-- /.row -->
+</div>
+<!-- /.container -->
+</section>
+
+<section>
+<!-- Page Content -->
+<div class="container" id="projects">
+<hr>
+<div class="row" id="portfolio">
+    <!-- Project 1 -->
+    <div class="col-xl-4 col-md-6 mb-4 mt-4 filter industry all">
         <a href="/sumologic.html">
             <div class="card border-0 shadow">
                 <img src="/img/project-cover/sumo.png" class="card-img-top" alt="Sumo Logic New Query Builder">
@@ -110,8 +158,8 @@
             </div>
         </a>
     </div>
-    <!-- Team Member 2 -->
-    <div class="col-xl-4 col-md-6 mb-4 mt-4">
+    <!-- Project 2 -->
+    <div class="col-xl-4 col-md-6 mb-4 mt-4 filter concept all">
         <a href="/storeefy.html">
           <div class="card border-0 shadow">
             <img src="/img/project-cover/storeefy.png" class="card-img-top" alt="Storeefy">
@@ -122,8 +170,8 @@
           </div>
         </a>
     </div>
-    <!-- Team Member 3 -->
-    <div class="col-xl-4 col-md-6 mb-4 mt-4">
+    <!-- Project 3 -->
+    <div class="col-xl-4 col-md-6 mb-4 mt-4 filter research all">
         <a href="/brainstory.html">
           <div class="card border-0 shadow">
             <img src="/img/project-cover/brain-story.png" class="card-img-top" alt="BrainStory">
@@ -134,9 +182,8 @@
           </div>
         </a>
     </div>
-    <!--<div id="portfolio"></div>-->
-    <!-- Team Member 4 -->
-    <div class="col-xl-4 col-md-6 mb-4 mt-4" id="portfolio">
+    <!-- Project 4 -->
+    <div class="col-xl-4 col-md-6 mb-4 mt-4 filter concept all">
         <a href="/interactiveety.html">
           <div class="card border-0 shadow">
             <img src="/img/project-cover/interactiveety.png" class="card-img-top" alt="Interactiveety">
@@ -147,8 +194,20 @@
           </div>
         </a>
     </div>
-    <!-- Team Member 5 -->
-    <div class="col-xl-4 col-md-6 mb-4 mt-4">
+    <!-- Project 5 -->
+    <div class="col-xl-4 col-md-6 mb-4 mt-4 filter concept all">
+        <a href="/empower.html">
+          <div class="card border-0 shadow">
+            <img src="/img/project-cover/empower.png" class="card-img-top" alt="Empower">
+            <div class="card-body text-center">
+              <h5 class="card-title mb-0">eMpower</h5>
+              <div class="card-text text-black-50">Concept Design | Mobile App</div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <!-- Project 6 -->
+    <div class="col-xl-4 col-md-6 mb-4 mt-4 filter industry all">
         <a href="/samsung.html">
           <div class="card border-0 shadow">
             <img src="/img/project-cover/samsung.png" class="card-img-top" alt="Samsung Bixby">
@@ -159,8 +218,8 @@
           </div>
         </a>
     </div>
-    <!-- Team Member 6 -->
-    <div class="col-xl-4 col-md-6 mb-4 mt-4">
+    <!--Project 7 -->
+    <div class="col-xl-4 col-md-6 mb-4 mt-4 filter research all">
         <a href="/gesturewiz.html">
           <div class="card border-0 shadow">
             <img src="/img/project-cover/gesturewiz.png" class="card-img-top" alt="Gesture Wiz">
@@ -190,6 +249,26 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script>
+        $(document).ready(function(){
+
+        $(".filter-button").click(function(){
+            var value = $(this).attr('data-filter');
+
+            if(value == "all")
+            {
+                $('.filter').show('1000');
+            }
+            else
+            {
+                $(".filter").not('.'+value).hide('3000');
+                $('.filter').filter('.'+value).show('3000');
+
+            }
+        });
+
+    });      
+  </script>
 
 </body>
 
