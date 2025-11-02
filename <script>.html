@@ -1,0 +1,110 @@
+    <script>
+        class SolutionSlider {
+            constructor() {
+                this.currentSlide = 0;
+                this.totalSlides = 3;
+                this.cardsContainer = document.getElementById('cardsContainer');
+                this.prevBtn = document.getElementById('prevBtn');
+                this.nextBtn = document.getElementById('nextBtn');
+                this.indicators = document.querySelectorAll('.indicator');
+                
+                this.init();
+            }
+
+            init() {
+                this.updateSlide();
+                this.bindEvents();
+                this.startAutoSlide();
+            }
+
+            bindEvents() {
+                this.prevBtn.addEventListener('click', () => this.prevSlide());
+                this.nextBtn.addEventListener('click', () => this.nextSlide());
+                
+                this.indicators.forEach((indicator, index) => {
+                    indicator.addEventListener('click', () => this.goToSlide(index));
+                });
+
+                // Pause auto-slide on hover
+                const container = document.querySelector('.solution-container');
+                container.addEventListener('mouseenter', () => this.pauseAutoSlide());
+                container.addEventListener('mouseleave', () => this.startAutoSlide());
+            }
+
+            nextSlide() {
+                this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
+                this.updateSlide();
+            }
+
+            prevSlide() {
+                this.currentSlide = (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
+                this.updateSlide();
+            }
+
+            goToSlide(index) {
+                this.currentSlide = index;
+                this.updateSlide();
+            }
+
+            updateSlide() {
+                const translateX = -this.currentSlide * 100;
+                this.cardsContainer.style.transform = `translateX(${translateX}%)`;
+                
+                this.updateControls();
+                this.updateIndicators();
+                this.updateCardNumbers();
+            }
+
+            updateControls() {
+                this.prevBtn.disabled = this.currentSlide === 0;
+                this.nextBtn.disabled = this.currentSlide === this.totalSlides - 1;
+            }
+
+            updateIndicators() {
+                this.indicators.forEach((indicator, index) => {
+                    indicator.classList.toggle('active', index === this.currentSlide);
+                });
+            }
+
+            updateCardNumbers() {
+                const cards = document.querySelectorAll('.solution-card');
+                cards.forEach((card, index) => {
+                    const numberElement = card.querySelector('.card-number');
+                    if (numberElement) {
+                        numberElement.textContent = `${String(index + 1).padStart(2, '0')} / ${String(this.totalSlides).padStart(2, '0')}`;
+                    }
+                });
+            }
+
+            startAutoSlide() {
+                this.autoSlideInterval = setInterval(() => {
+                    if (this.currentSlide === this.totalSlides - 1) {
+                        this.currentSlide = 0;
+                    } else {
+                        this.currentSlide++;
+                    }
+                    this.updateSlide();
+                }, 5000);
+            }
+
+            pauseAutoSlide() {
+                if (this.autoSlideInterval) {
+                    clearInterval(this.autoSlideInterval);
+                }
+            }
+        }
+
+        // Initialize slider when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            new SolutionSlider();
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                document.getElementById('prevBtn').click();
+            } else if (e.key === 'ArrowRight') {
+                document.getElementById('nextBtn').click();
+            }
+        });
+    </script>

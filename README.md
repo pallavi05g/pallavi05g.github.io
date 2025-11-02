@@ -1,1 +1,0 @@
-# Pallavi Gupta's Portfolio Website
