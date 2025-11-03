@@ -91,9 +91,7 @@
     <section class="content-section">
         <div class="container">
             <h2>Background</h2>
-            <p>Users want answers to these immediately. They get frustrated if their voice assistant does not give the right answer or doesn't help them when they really need the help. 
-            <br><br>
-            Simply put, users want contextual help in everyday tasks.</p>
+            <p>Back in 2014, voice assistants like Siri, Google Assistant and Alexa were command-driven and forgetful. If you asked 'What's the weather?' then followed up with 'What about tomorrow?'— they'd fail. Users would get frustrated if their voice assistant didn't really answer their questions. While the simple ones worked, the complex ones failed as these assistants missed context.</p>
             <div class="results-grid">
                 <div class="result-card">
                     <h3>"What’s the time now?"</h3>
@@ -121,7 +119,7 @@
     <section class="content-section goal-section">
         <div class="container">
             <h2>Goal</h2>
-            <p class="goal-text">Our goal was to create a voice assistant that could understand natural language and remember context. This meant understanding users needs and technology limitations in order to create a design framework that works and implement that into a fully-functioning system.<br><br>The system should be able to help with simple tasks such as setting timers or even handle complex tasks like creating a photo album of recently taken pictures on a given day and, sharing it with family and friends.</p>
+            <p class="goal-text">Our goal at Samsung was build a truly conversational assistant that remembered context across multiple turns and domains. This meant understanding users needs and technology limitations in order to create a technical framework that works and implement that into a fully-functioning system.<br><br>The system should be able to help with simple tasks such as setting timers or even handle complex tasks like creating a photo album of recently taken pictures on a given day and, sharing it with family and friends.</p>
         </div>
     </section>
      
@@ -130,7 +128,8 @@
     <section class="content-section alt-bg">
         <div class="container">
             <h2>Role</h2>   
-            <p>As a software engineer on Samsung's Bixby team, I prototyped and implemented the context-awareness framework that enabled the voice assistant to understand natural language and maintain conversation context across multiple domains such news, weather, location, alarms, and more. In order to do so, my work involved collaborating with teams across design, strategy and engineering.</p>
+            <p>As a software engineer on Samsung's Bixby team, I built the technical infrastructure to make that possible.</p>
+            <p>I prototyped and implemented the context-awareness framework that enabled the voice assistant to understand natural language and maintain conversation context across multiple domains such news, weather, location, alarms, and more. In order to do so, my work involved collaborating with teams across design, strategy and engineering.</p>
             <img src="img/samsung/bixby-working.png" class="case-study-hero-image">
         </div>
     </section>
@@ -140,22 +139,22 @@
     <div class="process-grid-2">
         <section class="content-section">
             <div class="container">
-                <h2>Framework Definition</h2>
-                <p>Participated in user interviews to understand users' mental models and observe their interaction behaviors with a voice assistant. Defined a framework for context -- interaction patterns, sentence construction and discourse paths</p>
+                <h2>Technical Problem Scoping</h2>
+                <p>Defined a framework for context -- interaction patterns, sentence construction and discourse paths. Evaluated 3rd-party content providers and defined technical integration requirements</p>
             </div>
         </section>
 
         <section class="content-section alt-bg">
             <div class="container">
-                <h2>Technical Problem Scoping</h2>
-                <p>Evaluated technical feasibility of designs, scoped responses based on NLU and ASR model capabilities and evaluted 3P content providers to partner with</p>
+                <h2>Framework Implementation</h2>
+                <p>Designed and implemented the context-awareness framework connecting NLU, ASR, and domain modules across 8 languages. Built and maintained core NLP backend infrastructure supporting 10+ domains (news, weather, location, health, media, etc.).</p>
             </div>
         </section>
 
         <section class="content-section">
             <div class="container">
-                <h2>Prototyping & Implementation</h2>
-                <p>Implemented an Android app and a demo server with NLU & ASR models, content and language modules plugged to REST APIs </p>
+                <h2>Prototyping & Testing</h2>
+                <p>Created an Android prototype and demo server integrating NLU/ASR models with REST APIs. Achieved 95% intent classification accuracy at <100ms latency serving 10M+ users during beta</p>
             </div>
         </section>
 
@@ -166,27 +165,14 @@
             </div>
         </section>
     </div>
-    
 
-    <!-- Solution Overview - WIP -->
-    <section class="solution-overview">
-        <div class="container">
-            <div class="solution-content">
-                <p class="solution-text">Context matters. Period.</p>
-                <p class="solution-goal">There are several factors that come into play when we talk about conversational intelligent assistants. One such factor is location. It matters where you are located -- Seoul or San Francisco or Bangalore or London -- as the response may or may not be relevant for you. 
-                <br><br>
-                Other context-awareness factors include timezones, languages and locales that affect local info such as news, weather, restaurant reservations.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features -- WIP -->
+    <!-- Solution-->
     <section class="features">
         <div class="container">
         <h2>Connecting the dots: Entity Resolution & Intent Mapping</h2>
         <section class="content-section">
             <div class="container">  
-                <p>I was working on a prototype that connected different services and spun out a response that was relevant to a user. Let's look at the entity resolution mapping for the following example:</p>
+                <p>Let's look at how a machine understands you and see what the entity resolution mapping for the following example looks like:</p>
             </div>
             <img src="img/samsung/entity-resolution-viz.png" class="case-study-hero-image">
             <div class="container">  
@@ -201,14 +187,47 @@
             </div>
         </section>
         </div>
-</section>
+        <!-- Technical Challenges -->
+        <section class="solution-overview">
+            <div class="container">
+                <div class="solution-content">
+                    <p class="solution-text">Why is it hard. Context matters. Period.</p>
+                    <p class="solution-goal">There are several factors that come into play when we talk about conversational intelligent assistants. One such factor is location. It matters where you are located -- Seoul or San Francisco or Bangalore or London -- as the response may or may not be relevant for you. 
+                    <br><br>
+                    Other context-awareness factors include timezones, languages and locales that affect local info such as news, weather, restaurant reservations.</p>
+                </div>
+            </div>
+        </section>
+        <div class="process-grid-2">
+            <section class="content-section">
+                <div class="container">
+                    <h2>Multi-domain context switching</h2>
+                    <p>Users don't say "Hey Bixby, using the Weather domain, what's the temperature?" They switch between domains mid-conversation. We had to build a context manager that tracked conversation history and routed queries to the right domain.</p>
+                </div>
+            </section>
+
+            <section class="content-section alt-bg">
+                <div class="container">
+                    <h2>Content provider orchestration</h2>
+                    <p>A single query like "Wake me up at 6am when I'm jogging" requires coordinating Clock (system), Maps (cloud), and Health (cloud) services. We built an orchestration layer that parallelized API calls and handled failures gracefully.</p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="container">
+                    <h2>Sub-100ms latency requirement</h2>
+                    <p>Voice interactions feel broken above 100ms. We optimized our NLU pipeline to classify intents and extract entities in under 100ms while maintaining 95% accuracy.</p>
+                </div>
+            </section>
+        </div>
+    </section>
 
     <!-- Results -->
     <section class="results">
         <div class="container">
             <div class="results-intro">
                 <h2>Results</h2>
-                <p>The product was unveiled in March 2017 at the Samsung Galaxy S8 Unpacked event and officially rolled out worldwide in July 2017. </p>
+                <p>The product was unveiled in March 2017 at the Samsung Galaxy S8 Unpacked event and officially rolled out worldwide in July 2017. The context-awareness framework I helped build became foundational to Bixby's success:</p>
             </div>
             <div class="numbers-grid">
                 <div class="number-card">
@@ -221,7 +240,7 @@
                 </div>
                 <div class="number-card">
                     <h2>200</h2>
-                    <p>countries</p>
+                    <p>countries with localized context handling</p>
                 </div>
             </div>
         </div>
@@ -235,22 +254,31 @@
                 <div class="number-card">
                     <!-- Samsung News -->
                     <span class="announcement-source">        
+                        <a href="https://news.samsung.com/us/bixby-voice-capabilities-us-launch" target="_blank">
+                        Samsung News
+                        <img src="img/external-link.svg" class="external-link-icon"></i></a>
+                    </span>
+                    <h3>"MOUNTAIN VIEW, Calif., – July 18, 2017 – Samsung Electronics America, Inc. today announced that the voice-based feature of Bixby will be available starting today, for Galaxy S8 and S8+ owners in the U.S."</h3>
+                </div>
+                <div class="number-card">
+                    <!-- Samsung News -->
+                    <span class="announcement-source">        
                         <a href="https://news.samsung.com/global/bixby-a-new-way-to-interact-with-your-phone" target="_blank">
                         Samsung News
                         <img src="img/external-link.svg" class="external-link-icon"></i></a>
                     </span>
-                    <h3>"In January 2023, Alexa launched a language-learning experience in Spain that helps Spanish speakers learn beginner-level English..."</h3>            
-                </div>
-                <div class="number-card">
-                    <!--ZDNet-->
-                    <span class="announcement-source">        
-                        <a href="https://www.zdnet.com/article/hola-alexa-amazon-expands-ai-powered-english-lessons-for-spanish-speakers" target="_blank">
-                        CNET
-                        <img src="img/external-link.svg" class="external-link-icon"></i></a>
-                    </span>
-                    <h3>“Following successful launch in Spain, Amazon brings English learning features to Spanish speakers across North America with enhanced pronunciation feedback...”</h3>
+                    <h3>"Samsung has a conceptually new philosophy to the problem:  instead of humans learning how the machine interacts with the world (a reflection of the abilities of designers), it is the machine that needs to learn and adapt to us...Bixby will be a new intelligent interface on our devices."</h3>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- My learnings -->
+    <section class="content-section">
+        <div class="container">
+            <h2>What I learned</h2>   
+            <p>Building Bixby's context-awareness system gave me a deep understanding of conversational AI's technical constraints—latency budgets, model accuracy trade-offs, multi-domain orchestration.</p>
+            <p>When I transitioned to product design, this engineering background became my superpower. I design conversations knowing exactly what's technically feasible, how much latency each interaction adds, and where ML models will struggle. This makes me a better designer for AI products.</p>
         </div>
     </section>
 
