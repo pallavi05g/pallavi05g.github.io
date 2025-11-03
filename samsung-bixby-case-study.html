@@ -6,6 +6,26 @@
     <title>Samsung Bixby - Case Study</title>
     <link rel="stylesheet" href="case-study-styles.css">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics--> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90243840-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-90243840-2');
+    </script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90243840-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-90243840-1');
+    </script>
 </head>
 <body>
 
@@ -28,7 +48,8 @@
         <div class="container">
             <div class="case-tag">Natural Language Processing</div>
             <div class="case-tag">Multimodal AI</div>
-            <h1>Samsung Bixby</h1>
+            <div class="case-tag">Systems Thinking</div>
+            <h1>Samsung Bixby: Engineering Context-Aware Conversational AI</h1>
             <div class="project-details">
                 <div class="detail-item">
                     <span class="detail-label">COMPANY</span>
@@ -109,30 +130,31 @@
     <section class="content-section alt-bg">
         <div class="container">
             <h2>Role</h2>   
-            <p>Prototyped and implemented context-awareness across domains and languages to enrich conversational user experience of Bixby by collaborating with design, strategy and engineering teams.</p>
+            <p>As a software engineer on Samsung's Bixby team, I prototyped and implemented the context-awareness framework that enabled the voice assistant to understand natural language and maintain conversation context across multiple domains such news, weather, location, alarms, and more. In order to do so, my work involved collaborating with teams across design, strategy and engineering.</p>
+            <img src="img/samsung/bixby-working.png" class="case-study-hero-image">
         </div>
     </section>
 
 
-        <!-- Process Sections -->
+    <!-- Process Sections -->
     <div class="process-grid-2">
         <section class="content-section">
             <div class="container">
-                <h2>User Research</h2>
+                <h2>Framework Definition</h2>
                 <p>Participated in user interviews to understand users' mental models and observe their interaction behaviors with a voice assistant. Defined a framework for context -- interaction patterns, sentence construction and discourse paths</p>
             </div>
         </section>
 
         <section class="content-section alt-bg">
             <div class="container">
-                <h2>Problem Scoping</h2>
+                <h2>Technical Problem Scoping</h2>
                 <p>Evaluated technical feasibility of designs, scoped responses based on NLU and ASR model capabilities and evaluted 3P content providers to partner with</p>
             </div>
         </section>
 
         <section class="content-section">
             <div class="container">
-                <h2>Prototyping</h2>
+                <h2>Prototyping & Implementation</h2>
                 <p>Implemented an Android app and a demo server with NLU & ASR models, content and language modules plugged to REST APIs </p>
             </div>
         </section>
@@ -161,29 +183,25 @@
     <!-- Features -- WIP -->
     <section class="features">
         <div class="container">
-        <h2>Connecting the dots</h2>
+        <h2>Connecting the dots: Entity Resolution & Intent Mapping</h2>
         <section class="content-section">
             <div class="container">  
-                <p>I was working on a prototype that connected different services and spun out a response that was relevant to a user. Let's look at this example</p>
+                <p>I was working on a prototype that connected different services and spun out a response that was relevant to a user. Let's look at the entity resolution mapping for the following example:</p>
+            </div>
+            <img src="img/samsung/entity-resolution-viz.png" class="case-study-hero-image">
+            <div class="container">  
+                <p>There are several things at play here. This task that seems so simple for a user needs multiple applications to work together. This task needs to invoke the native Clock, Maps and Samsung Health applications.</p>
+            </div>
+            <div class="container">  
+                <p>While Clock is a system application, Maps and Samsung Health are cloud-based applications that need to make calls to the backend. The backend has to fetch these responses from multiple applications and then create a response and speak in a language that a user can understand. All this needs to be done in a very short period of time.</p>
+            </div>
+            <div class="container">  
+                <p>When all these work seamlessly, it seems magical!</p>
+                <p>The right most column shows how all these entities get structured into a machine-readable format that the system can act on - creating the reminder, linking location services, monitoring activity sensors, and setting up geofence triggers.</p>
             </div>
         </section>
-            <div class="feature-card">
-                <h2 style="margin-bottom: 0px;">"Remind me to stop at the grocery store to buy bread when I’m jogging."</h2>
-            </div>
         </div>
-    </section>
-
-    <section class="content-section">
-        <div class="container">  
-            <p>There are several things at play here. This task that seems so simple for a user needs multiple applications to work together. This task needs to invoke the native Clock, Maps and Samsung Health applications.</p>
-        </div>
-        <div class="container">  
-            <p>While Clock is a system application, Maps and Samsung Health are cloud-based applications that need to make calls to the backend. The backend has to fetch these responses from multiple applications and then create a response and speak in a language that a user can understand. All this needs to be done in a very short period of time.</p>
-        </div>
-        <div class="container">  
-            <p>When all these work seamlessly, it seems magical!</p>
-        </div>
-    </section>
+</section>
 
     <!-- Results -->
     <section class="results">
@@ -217,7 +235,7 @@
                 <div class="number-card">
                     <!-- Samsung News -->
                     <span class="announcement-source">        
-                        <a href="https://news.samsung.com/global/bixby-a-new-way-to-interact-with-your-phone" class="secondary-button" target="_blank">
+                        <a href="https://news.samsung.com/global/bixby-a-new-way-to-interact-with-your-phone" target="_blank">
                         Samsung News
                         <img src="img/external-link.svg" class="external-link-icon"></i></a>
                     </span>
