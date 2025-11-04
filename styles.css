@@ -175,7 +175,7 @@ nav {
     flex-direction: row;
     flex-wrap: nowrap; /*Set to wrap for vertical stacking */
     gap: 40px;
-    height: 80vh;
+    /*height: 80vh;*/ /* removed this */
     justify-content:flex-start; /* Initally set to space-evenly */
     max-width: 1200px;
     min-height: 620px;
@@ -185,7 +185,7 @@ nav {
     top: 72px;
     width: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    will-change: var(transform);
+    will-change: transform; /* original value: var(transform) */
     z-index: 1;
     cursor: pointer;
 }
@@ -221,6 +221,8 @@ nav {
     will-change: var(transform);
     cursor: pointer;
 }
+
+
 
 .project-card-v3 {
     align-content: center;
@@ -287,11 +289,14 @@ nav {
 .project-image-v1 {
     display: block;
     width: 50%; /* Changed from 50% */
-    height: relative;
-    position: relative;
+    height: relative; /* original value relative */
+    /*position: relative;*/
     margin:auto;
     top: 24px;
-    overflow: hidden;
+    /*overflow: hidden;*/
+    /* newly added below*/
+    /*max-height: 450px;*/
+    object-fit: cover;
 }
 
 /*white background*/
@@ -619,6 +624,7 @@ nav {
 }
 
 /* Responsive Design */
+
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 48px;
@@ -661,6 +667,28 @@ nav {
     .project-grid {
         grid-template-columns: 1fr;
     }
+
+    /* Mobile project card adjustments */
+    .project-card-v1,
+    .project-card-v2,
+    .project-card-v4 {
+        flex-direction: column;
+        padding: 24px;
+        gap: 20px;
+        border-radius: 24px;
+        position: relative;
+        top: 0;
+        min-height: auto;
+    }
+
+    .project-card-v1 > div:first-child {
+        width: 100%;
+    }
+    
+    .project-image-v1 {
+        /*max-height: 280px;*/
+        border-radius: 16px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -686,6 +714,19 @@ nav {
     .cta-button {
         padding: 12px 24px;
         /*font-size: 14px;*/
+    }
+
+    /* Mobile project card adjustments */
+    .project-card-v1,
+    .project-card-v2,
+    .project-card-v4 {
+        padding: 20px;
+        gap: 16px;
+    }
+    
+    .project-image-v1 {
+        /*max-height: 220px;*/
+        border-radius: 12px;
     }
 
 }
