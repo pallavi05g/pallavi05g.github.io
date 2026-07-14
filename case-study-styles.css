@@ -174,6 +174,10 @@ h2 {
     background-color: #fafafa;
 }
 
+.content-section.black {
+    background-color: #000000;
+}
+
 .content-section.goal-section {
     /*background-color: #fafafa;*/
     background: linear-gradient(125deg, var(--token-7271da1b-9f0a-41bd-91b9-d7098d8944de, #f4edff) 0%, var(--token-a37e6c3e-a10c-437b-b258-07d1d49555da, rgb(252, 235, 239)) 100%);
@@ -273,6 +277,13 @@ h2 {
     display: block;
     width: 100%;
     margin: 16px auto;
+}
+
+.project-usecase-image-narrow{
+    display: block;
+    width: 50%;
+    margin: 16px auto;
+    padding: 20px;
 }
 
 .project-usecase-column-left{
@@ -800,6 +811,8 @@ animation: shimmer 1.5s infinite;
     overflow: hidden;
     border-radius: 20px;
     margin-bottom: 2rem;
+    width: 100%;
+    max-width: 100%;
     /*background: #f8fafc;*/
     /*border: 2px solid #e2e8f0;*/
 }
@@ -810,10 +823,24 @@ animation: shimmer 1.5s infinite;
     will-change: transform;
 }
 
+/* Each .solution-card is one carousel "slide slot" — always exactly 100% of .slider-frame's width, with zero margin, so the JS's translateX(-100% * index) math lines up perfectly and nothing overflows .slider-frame's overflow:hidden. */
 .solution-card {
-    min-width: 100%; /* initial 100% */
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+/* .card-visual is the actual visible card: 80% wide and centered within its slide slot. All card styling (background, shadow, rounded corners) lives here instead of on .solution-card. */
+.card-visual {
+    width: 80%;
+    max-width: 100%;
+    box-sizing: border-box;
     padding: 2rem;
-    background: linear-gradient(135deg, #fef3f2 0%, #fef2f2 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -821,23 +848,23 @@ animation: shimmer 1.5s infinite;
     position: relative;
     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
-    margin: 1rem; /* initial 1 rem */
-}
-
-.solution-card:nth-child(1) {
     background: linear-gradient(135deg, #fef3f2 0%, #fef2f2 100%);
 }
 
-.solution-card:nth-child(2) {
+.solution-card:nth-child(1) .card-visual {
+    background: linear-gradient(135deg, #fef3f2 0%, #fef2f2 100%);
+}
+
+.solution-card:nth-child(2) .card-visual {
     background: linear-gradient(135deg, #f0fdf4 0%, #f0f9ff 100%);
 }
 
-.solution-card:nth-child(3) {
+.solution-card:nth-child(3) .card-visual {
     background: linear-gradient(135deg, #fefce8 0%, #fdf4ff 100%);
 }
 
 .card-image {
-    /*width: 100%;*/
+    width: 100%;
     max-width: 720px; /* initial 400px */
     height: auto; /* initial 250px */
     object-fit: cover;
@@ -942,9 +969,9 @@ animation: shimmer 1.5s infinite;
         font-size: 2rem;
     }
 
-    .solution-card {
+    .card-visual {
+        width: 90%;
         padding: 1.5rem;
-        margin: 0.5rem;
     }
 
     .card-image {

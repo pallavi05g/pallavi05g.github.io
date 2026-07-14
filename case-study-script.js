@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
 class SolutionSlider {
     constructor() {
         this.currentSlide = 0;
-        this.totalSlides = 3;
+        this.totalSlides = 4;
         this.cardsContainer = document.getElementById('cardsContainer');
         this.prevBtn = document.getElementById('prevBtn');
         this.nextBtn = document.getElementById('nextBtn');
