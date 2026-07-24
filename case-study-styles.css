@@ -75,7 +75,7 @@ h2 {
 
 /* Case Study Hero */
 .case-hero {
-    padding: 90px 0 60px; /* Reduced to 90 from 120px*/
+    padding: 60px 0 60px; /* Reduced to 60 from 90px*/
     text-align: center;
 }
 
@@ -96,14 +96,15 @@ h2 {
     font-weight: 500;
     text-transform: lowercase;
     letter-spacing: 0.5px;
-    margin-bottom: 24px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .case-hero h1 {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.1;
-    margin-bottom: 48px;
+    margin-top: 48px;
     /*color:#764ba2;*/
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     -webkit-background-clip: text;
@@ -118,6 +119,7 @@ h2 {
     gap: 32px;
     max-width: 900px;
     margin: 0 auto;
+    padding-bottom: 24px;
 }
 
 .detail-item {
@@ -371,7 +373,7 @@ h2 {
 
 /* Results Section */
 .results {
-    padding: 80px 0;
+    padding: 80px 0; /* reduced from 80 to 60*/
     background-color: #fafafa;
 }
 
@@ -394,7 +396,7 @@ h2 {
     margin-bottom: 64px;
 }
 
-.results-intro p {
+.results p {
     font-size: 18px;
     color: #666;
     line-height: 1.7;
@@ -450,6 +452,7 @@ h2 {
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 24px;
 }
 
 .number-card h2 {
